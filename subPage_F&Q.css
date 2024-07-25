@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+li { list-style: none; }
+a { text-decoration: none; color: #000; }
+/*--------reset--------*/
+
+body { 
+    font-size:16px;
+}
+    /*헤더*/
+    header { height: 70px; }
+    
+        /*경로*/
+        .locationBar { 
+            position: relative; /*:after의 position의 기준*/
+            text-align: right;
+        }
+            .locationBar a:after {
+                content: ""; /*없으면 background 이미지가 보이지 않음*/
+                background: url(images/angle-right-solid.svg) no-repeat;
+                width: 8px;
+                height: 8px;
+                position: absolute; /*센터 정렬을 위한 코드*/
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .locationBar a:last-child:after {display:none}
+        /*타이틀*/
+        .title {
+           text-align: center;
+           font-size: 3em;
+           margin: 20px 0;
+        }
+
+        /*검색창*/
+        .searchBox{
+            width: 725px;
+            display: block;
+            margin: 0 auto;
+            position: relative; /*searchBtn의 기준점*/
+            border-bottom: 2px solid #FF7E4B;
+
+        }
+            .inputBox {
+                width: 500px;
+                height: 40px;
+                margin: 0 auto;
+                border: none;
+                font-size: 20px;
+                padding-left: 10px;
+            }
+            .inputBox:focus { outline:none; }
+            .searchBtn {
+                background: url(images/magnifying-glass-solid.svg);
+                width: 25px;
+                height: 25px;
+                position: absolute; /*Y축 중앙정렬을 위한 코드 float:right를 주게 되면 inputBox와 높이를 맞추기 어려워서 position으로 조절*/
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                border: none;
+                cursor: pointer;
+            }
+
+        /*카테고리 버튼*/
+        .categoryBtn { text-align: center; }
+            .categoryBtn li {
+                background-color: #D9D9D9;
+                width: 100px;
+                height: 100px;
+                border-radius: 25%;
+                display: inline-block;  /*float을 주면 text-align: center가 풀리게 된다*/
+                margin: 40px 20px;
+            }
+            .categoryBtn li:hover {
+                background-color: #FF7E4B;
+            }
+
+            /*카테고리 버튼 addClass - 적용 후 li:hover 지우기*/
+            .categoryBtn li.chageColor {
+                background-color: #FF7E4B;
+            }
+
+        /*게시판*/
+        .boardWrap { 
+            width: 1100px; 
+            margin: 0 auto;
+        }
+        .boardWrap ul {
+            border-top: 2px solid #000;
+        }
+            .boardWrap li {
+                display: flex;
+                font-size: 20px;
+                padding: 15px 0;
+                border-bottom: 1px solid #D9D9D9;
+                background: url(images/angle-down-solid.svg) no-repeat right center/20px;
+                cursor: pointer;
+            }
+                .boardWrap li div.listNum {
+                    width: 5%;
+                    text-align: center;
+                }
+                .boardWrap li:hover a {
+                    color: #FF7E4B;
+                }
+                
