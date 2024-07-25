@@ -1,11 +1,139 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주차장 프로젝트</title>
+<title>nook홈페이지</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script src="js/index.js"></script> 
 </head>
 <body>
-    
+    <div class="video">
+        <video autoplay loop muted playsinline>
+            <source src="images/nook.mp4" type="video/mp4">
+        </video>
+        <div id="skipButton"><img src="images/skipbtn.png" alt="스킵버튼"></div>
+    </div>
+    <div class="bar">
+        <a href="#"><img src="images/top.png" alt="top버튼"></a>
+        <a href="#"><img src="images/chat.png" alt="chat봇버튼"></a>
+    </div>
+   
+<div id="wrapper">
+  <div id="header"> 
+        <h1><a href="index.html"><img src="images/logo_w.png" alt="nook마크" /></a></h1>
+        
+        <div id="mainbanner">
+        <div class="mainimage"><img src="images/header.png"/></div>
+        <div class="mainletter">주차 스트레스 해소<br/>바쁜 현대인인 당신을 위한<br/><span>스마트 주차 솔루션</span></div>
+
+        </div>
+            <ul id="menu">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">이용방법</a></li>
+            <li><a href="#">스마트폰 앱</a>ㄴ</li>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#">문의사항</a></li>
+            </ul>
+        <div class="menubtn"><a href="#"><img src="images/icon_ham.svg"></a></div>
+  </div><!-- header -->
+
+  <div id="container">
+        <div id="second">
+            <div id="ment">
+                <h2 class="mentimg"><img src="images/tower.jpg" alt="꽉 막힌 도심사진"/></h2>
+                    <div id="locamark">
+                        <div class="loca1"><img src="images/loca.png" alt="투명위치표시"></div>
+                        <div class="loca2"><img src="images/loca.png" alt="투명위치표시"></div>
+                        <div class="loca3"><img src="images/loca.png" alt="투명위치표시"></div>
+                        <div class="loca4"><img src="images/loca.png" alt="투명위치표시"></div>
+                    </div>
+                <div class="towerment">
+                    <p >꽉 막힌 도심 속</p>
+                    <p class="ment1"><span>나만의 공간</span>을 찾으세요</p>
+                </div>
+            </div>            
+        </div> <!-- city -->
+
+        <div id="third">
+            <div class="left">
+                <h1>시간과 장소에 상관없이<br/><span>언제 어디서나 간편하게</span></h1>
+            </div>
+            <div class="right">
+                <div class="box1">앱으로 예약하기<br>
+                    스마트한 주차 경험을 시작해보세요</div>
+                <div class="box2">한눈에 보는 스마트 주차 솔루션<br> 
+                    주차 공간 검색, 예약 관리,개인화된 추천 서비스</div>
+                <div class="box3">실시간 주차 현황 및 예약 서비스<br>
+                    가장 적합한 장소를 선택하세요</div>
+                <div class="box4">마이카 설정 및 관리<br>
+                    차량 정보를 입력하고 개인화된 서비스를 이용하세요</div>
+            </div>
+        </div> <!-- third -->
+
+        <div id="fourth">
+            <h1><img src="images/appstore.jpg" alt="appstore"></h1>
+            <p class="fment">당신의 삶에<br><img src="images/logo_orange.png" alt="주황색nook로고"> 을 더하세요<span>+</span></p>
+            
+            <ul class="appbtn">
+                <li><a href="#"><img src="images/google.png" alt="구글 앱스토어"></a></li>
+                <li><a href="#"><img src="images/apple.png" alt="애플 앱스토어"></a></li>
+            </ul>
+        </div><!-- fourth -->
+        
+        
+        <div id="fifth">
+            <div id="fifthMent"><img src="images/appLogo.png" alt="nook앱 로고"><br>스마트 주차의 새로운 시대<br><span>혁신적인 주차 앱 등장!</span></div>
+            
+            <ul>
+                <p class="countMent"><img src="images/logo_orange.png" alr="nook로고">은 
+                    <span>일반 운전자</span>와 <span>주차장 관계자</span> 모두와 함께 <span>주차의 미래</span>를 주도합니다.</p>
+                <li>
+                    <p>누적회원</p>
+                    <h1 ><span class="countNum1">100</span>만</h1>
+                    <div class="plus">+</div>
+                </li>
+                <img src="images/Line 1.png" alt="라인">
+                <li>
+                    <p>누적 다운로드</p>
+                    <h1 ><span class="countNum2">300</span>만</h1>
+                    <div class="plus">+</div>
+                </li>
+                <img src="images/Line 1.png" alt="라인">
+                <li>
+                    <p>누적 매칭권 수</p>
+                    <h1><span class="countNum3">54,456</span>만</h1>
+                    <div class="plus">+</div>
+                </li>
+                
+            </ul>
+        </div><!-- fifth -->
+    </div><!--container-->
+  <div id="footer">
+        <div id="foot">
+            <ul class="flfl">
+                <li><a href="#">회사 소개</a></li>
+                <li><a href="#">사업자 정보확인</a></li>
+                <li class="bold"><a href="#">개인정보 취급방침</a></li>
+            </ul> 
+            <ul>
+                <li>대표 : 차다희,조윤정,유민아 | </li>
+                <li>사업자등록번호 : 123-45-78900 | </li>
+                <li>주소 : 서울 송파구 올림픽로 300 102호 (롯데타워) | </li>
+                <li>이메일 : nook@gmail.com</li>
+            </ul> 
+            <h1>고객센터 : 1234-5678 <span>/24시간(연중무휴)</span></h1>
+            <address>© Copyright 2024 nook. All Rights Reserved.</address>
+        </div>
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="images/ico_face.svg" alt="페이스북"></a></li>
+                <li><a href="#"><img src="images/ico_yout.svg" alt="유튜브"></a></li>
+                <li><a href="#"><img src="images/ico_insta.svg" alt="인스타그램"></a></li>
+            </ul>
+        </div>
+	</div><!--footer-->
+</div><!-- wrapper -->
 </body>
 </html>
