@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+li {list-style-type:none;}
+ a {text-decoration:none; color:#000;}
+ a:hover {text-decoration:underline;}
+ img {vertical-align:middle; border:none;} /*이미지에 생기는 1px정도의 차이를 없애주기위해 버티컬 사용*/
+ body {font-size:12px; font-family:굴림;}
