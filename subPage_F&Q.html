@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주차장 프로젝트-F&Q</title>
-    <link rel="stylesheet" href="subPage_F&Q.css">
+    <link rel="stylesheet" href="css/subPage_F&Q.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/subPage_F&Q.js"></script>
 </head>
 <body>
     <header></header>
@@ -26,40 +28,124 @@
         </div><!-- 검색창 끝-->
 
         <!-- 카테고리 버튼 -->
-        <div class="categoryBtn">
+        <div class="categoryBtn_wrap">
             <ul>
-                <li class="chageColor">전체</li>
-                <li>예약 관련</li>
-                <li>이용 관련</li>
-                <li>정기권 관련</li>
-                <li>할인권 관련</li>
-                <li>계정 관련</li>
+                <li class="categoryBtn on">이용 관련</li>
+                <li class="categoryBtn">예약 관련</li>
+                <li class="categoryBtn">정기권 관련</li>
+                <li class="categoryBtn">할인권 관련</li>
+                <li class="categoryBtn">계정 관련</li>
             </ul>
         </div><!-- 카테고리 버튼 끝-->
 
         <!-- 게시판-->
         <div class="boardWrap">
-            <ul>
+            <ul class="board board1 slide">
                 <li>
-                    <div class="listNum"><span>Q</span></div>
-                    <div class="listTxt"><a href="#">게시판 내용</a></div>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">주차요금은 어떻게 계산하나요?</a></div>
                     <div class="accordionBtn"></div>
+                    <div class="accordionBox">나이스파크 주차장은 무인으로 운영되며, 입차 시 발권하신 주차권을 무인정산기의 주차권 투입구에 투입하신 후 현금 또는 신용카드 및 할인권으로 결제해 주세요.
+                        차량번호인식 장비가 설치된 주차장의 경우 전산기 앞으로 차량을 가지고 이동하시면 차량번호 인식 후 결제요금이 표시됩니다. 정산기 안내에 따라 결제해 주세요.</div>
                 </li>
                 <li>
-                    <div class="listNum"><span>Q</span></div>
-                    <div class="listTxt"><a href="#">게시판 내용</a></div>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">주차장 운영시간은 어떻게 되나요?</a></div>
+                    <div class="accordionBox">나이스파크 주차장은 연중무휴, 24시간 이용이 가능합니다.
+                    </div>
                 </li>
                 <li>
-                    <div class="listNum"><span>Q</span></div>
-                    <div class="listTxt"><a href="#">게시판 내용</a></div>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">당일 최대 요금이 무엇인가요?</a></div>
+                    <div class="accordionBox">당일 최대요금은 주차장 요금이 과금시간 단위마다 계산되다가 일정 금액에 도달하면 더 이상 요금이 부과되지 않는 것을 말합니다.
+                        당일 최대요금은 주차장별로 다르니, 주차장 안내를 확인하여 주시기 바랍니다.
+                    </div>
                 </li>
                 <li>
-                    <div class="listNum"><span>Q</span></div>
-                    <div class="listTxt"><a href="#">게시판 내용</a></div>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">영수증이 발행되지 않습니다.</a></div>
+                    <div class="accordionBox">주차콜센터 1522-0741(24시간 연중무휴)로 문의주시면 해당 이용내역 조회 후 휴대폰으로 영수증이 발송됩니다.
+                    </div>
+                </li>
+            </ul>
+            <ul class="board board2">
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">예약한 날짜를 변경하고 싶을 땐 어떻게 하나요?</a></div>
+                    <div class="accordionBtn"></div>
+                    <div class="accordionBox">나이스파크 주차장은 무인으로 운영되며, 입차 시 발권하신 주차권을 무인정산기의 주차권 투입구에 투입하신 후 현금 또는 신용카드 및 할인권으로 결제해 주세요.
+                        차량번호인식 장비가 설치된 주차장의 경우 전산기 앞으로 차량을 가지고 이동하시면 차량번호 인식 후 결제요금이 표시됩니다. 정산기 안내에 따라 결제해 주세요.</div>
                 </li>
                 <li>
-                    <div class="listNum"><span>Q</span></div>
-                    <div class="listTxt"><a href="#">게시판 내용</a></div>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">예약에 오류가 있습니다.</a></div>
+                    <div class="accordionBox">나이스파크 주차장은 연중무휴, 24시간 이용이 가능합니다.
+                    </div>
+                </li>
+            </ul>
+            <ul class="board board3">
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">정기권 요금은 얼마인가요?</a></div>
+                    <div class="accordionBtn"></div>
+                    <div class="accordionBox">나이스파크 주차장은 무인으로 운영되며, 입차 시 발권하신 주차권을 무인정산기의 주차권 투입구에 투입하신 후 현금 또는 신용카드 및 할인권으로 결제해 주세요.
+                        차량번호인식 장비가 설치된 주차장의 경우 전산기 앞으로 차량을 가지고 이동하시면 차량번호 인식 후 결제요금이 표시됩니다. 정산기 안내에 따라 결제해 주세요.</div>
+                </li>
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">사용하던 정기권을 환불받고 싶어요.</a></div>
+                    <div class="accordionBox">나이스파크 주차장은 연중무휴, 24시간 이용이 가능합니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">정기권을 잃어버렸어요.</a></div>
+                    <div class="accordionBox">당일 최대요금은 주차장 요금이 과금시간 단위마다 계산되다가 일정 금액에 도달하면 더 이상 요금이 부과되지 않는 것을 말합니다.
+                        당일 최대요금은 주차장별로 다르니, 주차장 안내를 확인하여 주시기 바랍니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">차량을 교체했을 경우에는 어떻게 해야하나요.</a></div>
+                    <div class="accordionBox">주차콜센터 1522-0741(24시간 연중무휴)로 문의주시면 해당 이용내역 조회 후 휴대폰으로 영수증이 발송됩니다.
+                    </div>
+                </li>
+            </ul>
+            <ul class="board board4">
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">할인권이 무엇인가요?</a></div>
+                    <div class="accordionBtn"></div>
+                    <div class="accordionBox">나이스파크 주차장은 무인으로 운영되며, 입차 시 발권하신 주차권을 무인정산기의 주차권 투입구에 투입하신 후 현금 또는 신용카드 및 할인권으로 결제해 주세요.
+                        차량번호인식 장비가 설치된 주차장의 경우 전산기 앞으로 차량을 가지고 이동하시면 차량번호 인식 후 결제요금이 표시됩니다. 정산기 안내에 따라 결제해 주세요.</div>
+                </li>
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">할인권을 선물해주고 싶습니다.</a></div>
+                    <div class="accordionBox">나이스파크 주차장은 연중무휴, 24시간 이용이 가능합니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">할인권의 사용 기간을 연장할수 있나요.</a></div>
+                    <div class="accordionBox">당일 최대요금은 주차장 요금이 과금시간 단위마다 계산되다가 일정 금액에 도달하면 더 이상 요금이 부과되지 않는 것을 말합니다.
+                        당일 최대요금은 주차장별로 다르니, 주차장 안내를 확인하여 주시기 바랍니다.
+                    </div>
+                </li>
+            </ul>
+            <ul class="board board5">
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">회원을 탈퇴하고 싶습니다.</a></div>
+                    <div class="accordionBtn"></div>
+                    <div class="accordionBox">나이스파크 주차장은 무인으로 운영되며, 입차 시 발권하신 주차권을 무인정산기의 주차권 투입구에 투입하신 후 현금 또는 신용카드 및 할인권으로 결제해 주세요.
+                        차량번호인식 장비가 설치된 주차장의 경우 전산기 앞으로 차량을 가지고 이동하시면 차량번호 인식 후 결제요금이 표시됩니다. 정산기 안내에 따라 결제해 주세요.</div>
+                </li>
+                <li>
+                    <div class="listicon"><span>Q</span></div>
+                    <div class="listTxt"><a href="#">탈퇴 시 개인정보는 어떻게 되나요?</a></div>
+                    <div class="accordionBox">나이스파크 주차장은 연중무휴, 24시간 이용이 가능합니다.
+                    </div>
                 </li>
             </ul>
         </div><!-- 게시판 리스트 끝-->
