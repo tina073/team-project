@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+li {list-style-type:none;}
+ a {text-decoration:none; color:#000;}
+ a:hover {text-decoration:underline;}
+ img {vertical-align:middle; border:none;} /*이미지에 생기는 1px정도의 차이를 없애주기위해 버티컬 사용*/
+ body {font-size:16px; font-family:arial; width:100%; height:auto; overflow-x:hidden ;}
+
+
+ #wrap {}
+    #header { width:100%; height:200px; background-color: #E8E8E8;}
+        h1 { display: inline;  margin: 20px;}
+            .login {float:right; position: relative; top:-70px; right:30px;}
+            #menu { position: absolute; top: 30px; left: 300px; }
+            
+            #menu li { display: inline-block; margin-right: 40px; }
+            
+            #menu li a {color: black; font-weight: bold;}
+            
+            /*.menubtn {
+                position: absolute;
+                top: 15px;
+                right: 0;
+            }
+            
+            .menubtn img {
+                width: 50px;
+            }   */
+    #container { position:relative; overflow: hidden; width:100%;} 
+         #slider {      
+                        position: relative;
+                        width: 100%; /* 슬라이더 전체 너비 */
+                        height: 800px; /* 슬라이더 높이 */
+                        margin: 0 auto; /* 가운데 정렬 */
+                        padding-top: 50px;
+                        overflow: hidden;
+                        background-color: #E8E8E8; /* */
+                    }
+                    .cover {
+                        position: absolute;
+                        top:-80px;
+                        left: -130px;
+                        z-index: 10;
+                        width: 1000px;
+                        height: 950px;
+                        padding-top: 50px;
+                        ;
+                    }
+                    .cover2{
+                        position: absolute;
+                        top:20px;
+                        left:340px;
+                    }
+                    .imgView {
+                       /* display: flex;*/
+                        width: 320px; /* 이미지 개수 * 각 이미지 너비 */
+                        height: 650px;
+                        position: relative;
+                        z-index: 5;
+                        top:10px;
+                        left:220px;
+                        overflow: hidden;
+                    }
+                    .imgView li{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        margin-right: 10px;
+                        
+
+                    }
+                    .slide {
+                        width: 320px; /* 개별 이미지 너비 */
+                        height: 650px;
+                        flex-shrink: 0;
+                    }
+                    .slide img {
+                        width: 320px;
+                        height: 650px;
+                       
+                    }     
+        #app{clear:both; text-align: center; margin: 20px auto;}
+           #app h2{color:#000000; font-size: 50px; position: absolute; top:0; right:150px;}
+           #app span{color:#FF7E4B; font-size: 60px;}
+           #app p{color:#000000; font-size: 20px; position: absolute; top:450px; right:420px;}
+           #app .text{position: absolute; top:520px; right:580px; }
+           #app img{margin:200px 0; clear:both; position: absolute; }
+           #app .apple{top:450px; right:750px; width:180px; height:50px;}
+           #app .google{top:450px; right:500px; width:180px; height:50px;}
+           #app img a{ cursor: pointer;}
+           #app .logoImg{width: 30px; height: 30px; position: absolute; top:-200px; right:0;}                  
+                 
+        #content{}
+           .intro,.park,.home,.myCar {width:100%; height:750px; clear: both; margin-top: 20px; position: relative;}
+           .intro,.park{float:left; }
+           .home,.myCar{float:right; background-color: #E8E8E8;}
+                h2{text-align:center; color:#FF7E4B; font-size: 55px; font-weight:bold; margin-top:200px;} 
+                p{text-align:center;clear: both; position:absolute; margin-top: 50px; font-size:35px;} 
+                span{display: block;}
+
+                .img1,.img3{float:right; margin-right: 30px; margin-top: -190px; position: relative;}
+                .img2,.img4{float:left;  margin-left: 30px;  margin-top: -190px; position: relative;}
+                
+                .intro p{ left:260px;}
+                .intro h2{margin-left:80px;}
+                .park p{ left:80px;}
+                .park h2{margin-left:80px;}
+                .home p{  right:210px;}
+                .home h2{ margin-right:200px;}
+                .myCar p{ right:180px;}
+                .myCar h2{right:0; margin-right:180px;}
+
+
+        .bar {position:fixed; bottom:100px; right:0; z-index: 9999;}
+
+    #footer{width:100%; height:200px; background-color: #E8E8E8; padding-top: 100px; }
+        .address{margin-top: 100px;}
+        #footer a{display: inline; float:left;}
+        #footer h1{float:left; display: inline;}
+        #footer span{display: inline;}
+        footer{width: 100%;background-color: #D9D9D9;}
+        #foot {height: 150px;}
+            .flfl li {margin-right: 20px;}
+            .bold {font-weight: bold;font-size: 17px;text-decoration: underline;}
+            #foot ul li{display: inline;}
+            #foot ul {margin-bottom: 10px;}
+            #foot ul li a{color: rgb(0, 0, 0);}
+            #foot {padding-left: 20px;padding-top: 20px;}
+            #foot h1 span{font-size: 16px;}
+            address{text-align: center; color: gray; position: relative; top:100px; left:-200px;}
+
+            .sns {position: relative; left: 80%; top:-100px;}
+        .sns li{display: inline; }
+        .sns ul li img {transform: scale(1.5); margin-right: 50px;}
+            
