@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.act {
+    width: 100%;
+}
+
+.hamBg {
+    position: fixed;
+    height: 100vh;
+    background-color: #000;
+}

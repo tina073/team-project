@@ -34,12 +34,13 @@ body {
     #menu li:hover a {
         text-decoration: underline;
     }
-    .menubtn {
+    .hamBtn {
         width: 30px;
         height: 30px;
         position: absolute;
         top: 3%;
         right: 3%;
+        cursor: pointer;
     }
     .sns {
         position: absolute;
