@@ -15,42 +15,58 @@ body {
 }
 
     /*로고*/    
-    h1 { margin: 10px; }
+    h1 { 
+        margin: 10px; 
+        position: relative; 
+        z-index: 9999;
+    }
 
     /*네비게이션*/
     #menu {
-        position: absolute;
-        top: 30px;
-        left:300px;
+        margin: 130px 0 0 20px;
         display: none;
     }
-    #menu li {
-        display: inline-block;
-        margin-right: 40px;
+    #menu.open {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 8888;
     }
-    #menu li a {
-        font-weight: bold;
-        font-size: 20px;
-    }
-    #menu li:hover a {
-        text-decoration: underline;
-    }
-
+        #menu li {       
+            margin-top: 20px;     
+            display: block;
+            margin-right: 40px;
+        }
+            #menu li a {
+                font-weight: bold;
+                font-size: 35px;
+                color: #fff;
+            }
+            #menu li:hover a {
+                color: #FF7E4B;
+            }
+    .sns { display: none; }
+    
+    /*햄버거 버튼*/
     .hamBtn {
         width: 30px;
         height: 30px;
         position: absolute;
+        z-index: 9999;
         top: 3%;
         right: 3%;
         cursor: pointer;
     }
-    .sns {
-        position: absolute;
-        top: 35px;
-        right: 100px;
-        display: none;
+    .hamBg {
+        background-color: #001F3F;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 7777;
+        width: 100%;
+        height: 100vh;
     }
-        .sns li{display: inline;margin-right: 20px;}
+    
         /*경로*/
         .locationBar { 
             position: relative; /*:after의 position의 기준*/
@@ -170,23 +186,30 @@ body {
                     }
                     
     /*풋터*/
-    #footer{ background-color: #D9D9D9; position: relative; text-align: center;}
-            #foot {
-                height: 150px; 
-                padding: 20px 0 0 20px;
+    #footer{
+        background-color: #D9D9D9; 
+        position: fixed; 
+        bottom:0;
+        text-align: center; 
+        width: 100%;
+    }
+        #foot {
+            height: 140px; 
+            margin-top: 20px;
+        }
+            #foot ul { margin-bottom: 5px; }
+            #foot ul.flfl li{ padding-right: 10px;}
+            #foot ul.flfl li:last-child { padding-right: 0px;}
+                #foot ul li{ display: inline; }
+                    .flfl li.bold {
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+            #foot h2 span{ font-size: 16px;}
+            address{
+                text-align: center;
+                color: gray;
+                margin-top: 10px;
+                font-style: normal;
             }
-                #foot ul { margin-bottom: 10px; }
-                    #foot ul li{display: inline;}
-                        .flfl li {margin-right: 20px;}
-                        .flfl li.bold {
-                            font-weight: bold;
-                            text-decoration: underline;
-                        }
-                #foot h2 span{ font-size: 16px;}
-                address{
-                    text-align: center;
-                    color: gray;
-                    position: relative;
-                    top:40px;
-                }
 }
