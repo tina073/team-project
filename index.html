@@ -16,29 +16,33 @@
         <div id="skipButton"><img src="images/skipbtn.png" alt="스킵버튼"></div>
     </div>
     <div class="bar">
-        <a href="#"><img src="images/top.png" alt="top버튼"></a>
+        <a href="#" class="bartop"><img src="images/top.png" alt="top버튼"></a>
         <a href="#"><img src="images/chat.png" alt="chat봇버튼"></a>
     </div>
    
 <div id="wrapper">
   <div id="header"> 
+    <!-- nook마크 -->
+     <div id="fixed"> <!-- 네비게이션 바     -->
         <h1><a href="index.html"><img src="images/logo_w.png" alt="nook마크" /></a></h1>
-        
-        <div id="mainbanner">
-        <div class="mainimage"><img src="images/header.png"/></div>
-        <div class="mainletter">주차 스트레스 해소<br/>바쁜 현대인인 당신을 위한<br/><span>스마트 주차 솔루션</span></div>
-
-        </div>
-            <ul id="menu">
+        <ul id="menu">
             <li><a href="#">서비스 소개</a></li>
             <li><a href="#">이용방법</a></li>
-            <li><a href="#">스마트폰 앱</a>ㄴ</li>
+            <li><a href="#">스마트폰 앱</a></li>
             <li><a href="#">도움말</a></li>
             <li><a href="#">문의사항</a></li>
-            </ul>
-        <div class="menubtn"><a href="#"><img src="images/icon_ham.svg"></a></div>
+        </ul>
+     </div>
+     
+        <div id="mainbanner">
+        <div class="mainimage"><img src="images/header.png"/></div>
+        <div class="mainletter">주차 스트레스 해소<br/>바쁜 현대인인 당신을 위한<br/><span>스마트 주차 솔루션</span></div>    
+        </div>
+           
+            <!-- <div class="login"><a href="#">log in</a></div> -->
   </div><!-- header -->
 
+  <!-- 두번째화면 -->
   <div id="container">
         <div id="second">
             <div id="ment">
@@ -55,23 +59,55 @@
                 </div>
             </div>            
         </div> <!-- city -->
-
+<!-- 세번재 화면 -->
         <div id="third">
             <div class="left">
                 <h1>시간과 장소에 상관없이<br/><span>언제 어디서나 간편하게</span></h1>
             </div>
-            <div class="right">
-                <div class="box1">앱으로 예약하기<br>
-                    스마트한 주차 경험을 시작해보세요</div>
-                <div class="box2">한눈에 보는 스마트 주차 솔루션<br> 
-                    주차 공간 검색, 예약 관리,개인화된 추천 서비스</div>
-                <div class="box3">실시간 주차 현황 및 예약 서비스<br>
-                    가장 적합한 장소를 선택하세요</div>
-                <div class="box4">마이카 설정 및 관리<br>
-                    차량 정보를 입력하고 개인화된 서비스를 이용하세요</div>
-            </div>
+            <section class="right">
+                <article>
+                    <h2>My car</h2>
+                    <!-- video, h3, p 태그는 해당 요소들은 마우스로 오버시 jQuery를 이용하여 동적으로 화면상에 나타낼 것임.-->
+                    <img src="images/section1.jpg" alt="section1사진">
+                    <div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+                    <h3>마이카 설정 및 관리</h3>
+                    <p>
+                        차량 정보를 입력하고 개인화된 서비스를 이용하세요
+                    </p>
+                </article>
+                <!-- article 영역 -->
+                <article>
+                    <h2>Special</h2>
+                    <img src="images/section1.jpg" alt="section1사진">
+                    <div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+                    <h3>실시간 주차 현황 <br/>예약 서비스</h3>
+                    <p>
+                        가장 적합한 장소를 선택하세요
+                    </p>
+                </article>
+                <!-- article 영역 -->
+                <article>
+                    <h2>Solution</h2>
+                    <img src="images/section2.jpg" alt="section1사진">
+                    <div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+                    <h3>한눈에 보는 <br/> 스마트 주차 솔루션</h3>
+                    <p>
+                        주차 공간 검색,예약 관리,개인화된 추천 서비스
+                    </p>
+                </article>
+                <!-- article 영역 -->
+                <article>
+                    <h2>APP</h2>
+                    <img src="images/section1.jpg" alt="section1사진">
+                    <div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+                    <h3>앱으로 예약하기</h3>
+                    <p>
+                        스마트한 주차 경험을 시작해보세요
+                    </p>
+                </article>
+            </section>
         </div> <!-- third -->
-
+<!-- 네번째 화면 -->
         <div id="fourth">
             <h1><img src="images/appstore.jpg" alt="appstore"></h1>
             <p class="fment">당신의 삶에<br><img src="images/logo_orange.png" alt="주황색nook로고"> 을 더하세요<span>+</span></p>
@@ -82,16 +118,17 @@
             </ul>
         </div><!-- fourth -->
         
-        
+        <!-- 다섯번째 화면  -->
         <div id="fifth">
-            <div id="fifthMent"><img src="images/appLogo.png" alt="nook앱 로고"><br>스마트 주차의 새로운 시대<br><span>혁신적인 주차 앱 등장!</span></div>
+            <div id="fifthMent"><img src="images/appLogo.png" alt="nook앱 로고">
+                <br>스마트 주차의 새로운 시대<br><span>혁신적인 주차 앱 등장!</span></div>
             
             <ul>
                 <p class="countMent"><img src="images/logo_orange.png" alr="nook로고">은 
                     <span>일반 운전자</span>와 <span>주차장 관계자</span> 모두와 함께 <span>주차의 미래</span>를 주도합니다.</p>
                 <li>
                     <p>누적회원</p>
-                    <h1 ><span class="countNum1">100</span>만</h1>
+                    <h1 ><span class="countNum1"></span>만</h1>
                     <div class="plus">+</div>
                 </li>
                 <img src="images/Line 1.png" alt="라인">
