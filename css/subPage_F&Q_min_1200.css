@@ -18,21 +18,21 @@ body {
     h1 { margin: 10px; }
 
     /*네비게이션*/
-    #menu {
+    .gnb {
         position: absolute;
         top: 30px;
         left:300px;
     }
-    #menu li {
+    .gnb li {
         display: inline-block;
         margin-right: 40px;
     }
-    #menu li a {
+    .gnb li a {
         font-weight: bold;
         font-size: 20px;
     }
-    #menu li:hover a {
-        text-decoration: underline;
+    .gnb li:hover a {
+        color: #aaa;
     }
     .hamBtn {
         display: none;
@@ -50,6 +50,7 @@ body {
             text-align: right;
             
         }
+        .locationBar a:hover { text-decoration: underline; }
             .locationBar a:after {
                 content: ""; /*없으면 background 이미지가 보이지 않음*/
                 background: url(../images/angle-right-solid.svg) no-repeat;

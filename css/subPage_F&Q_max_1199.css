@@ -22,29 +22,29 @@ body {
     }
 
     /*네비게이션*/
-    #menu {
+    .gnb {
         margin: 130px 0 0 20px;
         display: none;
     }
 
     /*addClass*/
-    #menu.open {
+    .gnb.open {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         z-index: 8888;
     }
-        #menu li {       
+        .gnb li {       
             margin-top: 20px;     
             display: block;
             margin-right: 40px;
         }
-            #menu li a {
+            .gnb li a {
                 font-weight: bold;
                 font-size: 35px;
                 color: #fff;
             }
-            #menu li:hover a {
+            .gnb li:hover a {
                 color: #FF7E4B;
             }
     .sns { display: none; }
