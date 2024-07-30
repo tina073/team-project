@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+li {list-style-type:none;}
+ a {text-decoration:none; color:#000;}
+ a:hover {text-decoration:underline;}
+ img {vertical-align:middle; border:none;} /*이미지에 생기는 1px정도의 차이를 없애주기위해 버티컬 사용*/
+ body {font-size:16px; font-family:arial; width:100%; height:auto; overflow-x:hidden ;}
+ 
+ @media screen and (min-width:521px) and (max-width:1199px){
+
+    
+    #wrap{}
+    #header { width:100%; height:200px; background-color: #E8E8E8;}
+         h1 { display: inline;  margin: 20px;}
+
+            #menu { 
+                position: absolute; 
+                top: 30px; 
+                left: 300px; }
+                
+                #menu li { 
+                    display: inline-block; 
+                    margin-right: 40px; }
+                
+                #menu li a {
+                    color: black; 
+                    font-weight: bold;}
+                .hamBtn {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    cursor: pointer;
+                }
+    #container{}
+        #slider {      
+            position: relative;
+            width: 100%;   /*슬라이더 전체 너비 */
+            height: 600px;  /* 슬라이더 높이 */
+            margin: 0 auto;   /* 가운데 정렬 */
+            overflow: hidden;
+            background-color: #E8E8E8; 
+                 }
+            .cover2{
+                position: absolute;
+                bottom:-90px;
+                left:-40px;
+                width:600px;
+                height:700px;
+                     }
+            .imgView{display: none;}    
+           
+        #app{
+        clear:both; 
+        text-align: center; 
+        margin: 20px auto; 
+        position: relative;
+        }
+            #app h2 {
+                color:#000000; 
+                font-size: 35px; 
+                position: absolute; 
+                top:-740px; 
+                right:30px;
+                        }
+            #app span {
+                color:#FF7E4B; 
+                        }
+            #app p{
+                color:#000000; 
+                font-size: 20px; 
+                position: absolute; 
+                top:-430px; 
+                right:40px;
+                    }
+            #app .text{
+                margin-top: 150px;
+                margin-right: 180px;
+                        }
+            #app img{
+                margin:200px 0; 
+                clear:both; 
+                position: absolute; 
+                        }
+            #app .apple{
+                top:-400px; 
+                right:140px; 
+                width:180px; 
+                height:50px;
+                        }
+            #app .google{
+                top:-400px; 
+                right:390px; 
+                width:180px; 
+                height:50px;}
+            #app img a{cursor: pointer;}
+            #app .logoImg{
+                width: 30px; 
+                height: 30px; 
+                position: absolute; 
+                top:-200px; 
+                right:0;}      
+
+        #content{}
+           .intro,.park,.home,.myCar {width:100%; height:600px; clear: both; margin-top: 20px; position: relative;}
+           .intro,.park{float:left; }
+           .home,.myCar{float:right; background-color: #E8E8E8;}
+                h2{
+                    text-align:center; 
+                    color:#FF7E4B; 
+                    font-size: 40px; 
+                    position:absolute; 
+                    font-weight:bold; 
+                    margin-top:200px;} 
+                p{
+                    text-align:center;
+                    clear: both; 
+                    position:absolute; 
+                    margin-top: 50px; 
+                    font-size:25px;
+                } 
+                span{display: block;}
+
+                .img1,.img2,.img3,.img4{ position: absolute;}
+                
+                .img1{top:-210px; right:-170px; width:950px;}
+                .img2{top:-170px; left:-200px; width:950px;}
+                .img3{top:-150px; right:-220px; width:850px;}
+                .img4{top:-170px; left:-250px; width:950px;}
+
+                .intro h2{left:100px; top:-30px;}
+                .intro p{ left:100px; top:270px;}
+                .home h2{ right:80px; top:30px;}
+                .home p{  right:100px; top:280px;}
+                .park h2{left:50px; top:30px;}
+                .park p{ left:10px; top:290px;}
+                .myCar h2{right:200px; top:10px;}
+                .myCar p{ right:20px; top:240px;}
+              
+        .bar {
+            position:fixed; 
+            bottom:100px; 
+            right:0; 
+            z-index: 9999;
+            }
+
+    #footer{ clear: both; background-color: #D9D9D9; position: relative; text-align: center;}
+        #foot {height: 150px;  padding: 20px 0 0 20px; }
+            #foot ul { margin-bottom: 10px; }
+            #foot ul li{display: inline;}
+                .flfl li {margin-right: 20px;}
+                .flfl li.bold {font-weight: bold; text-decoration: underline;}
+                #foot span{ font-size: 16px; display: inline;}
+                address{
+                    text-align: center;
+                    color: gray;
+                    position: relative;
+                    top:40px;
+                }
+            .sns{display: none;}
+            /*.sns {position: absolute; right: 50px; top:30px;}
+                .sns li{display: inline; }
+                .sns ul li img {transform: scale(1.5); margin-right: 50px;} */
+ }

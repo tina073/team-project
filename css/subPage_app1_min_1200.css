@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+li {list-style-type:none;}
+ a {text-decoration:none; color:#000;}
+ a:hover {text-decoration:underline;}
+ img {vertical-align:middle; border:none;} /*이미지에 생기는 1px정도의 차이를 없애주기위해 버티컬 사용*/
+ body {font-size:16px; font-family:arial; width:100%; height:auto; overflow-x:hidden ;}
+
+
+@media screen and (min-width:961px) {
+#wrap {}
+    #header { width:100%; height:200px; background-color: #E8E8E8;}
+        h1 { display: inline;  margin: 20px;}
+            #menu { 
+                position: absolute; 
+                top: 30px; 
+                left: 300px; }
+            
+            #menu li { 
+                display: inline-block; 
+                margin-right: 40px; }
+            
+            #menu li a {
+                color: black; 
+                font-weight: bold;}
+            
+            .hamBtn {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 3%;
+                right: 3%;
+                cursor: pointer;
+            }
+    #container { 
+        position:relative; 
+        overflow: hidden; 
+        width:100%;} 
+         #slider {      
+                        position: relative;
+                        width: 100%;   /*슬라이더 전체 너비 */
+                       height: 600px;  /* 슬라이더 높이 */
+                      margin: 0 auto;   /* 가운데 정렬 */
+                        overflow: hidden;
+                        background-color: #E8E8E8; 
+                    }
+                   
+                    .cover2{
+                        position: absolute;
+                        top:-30px;
+                        left:1px;
+                        width:720px;
+                        height:750px;
+                    }
+                    .imgView {display: none;}
+                     /*.imgView {
+                      display: flex; */
+                       /*width: 300px;   이미지 개수 * 각 이미지 너비
+                        height: 500px;
+                        position: relative;
+                        z-index: 5;
+                        top:10px;
+                        left:220px;
+                        overflow: hidden;
+                    }
+                    .imgView li{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        margin-right: 10px;
+                        
+
+                    }
+                    .slide {*/
+                       /* width: 300px;  개별 이미지 너비
+                        height: 500px;
+                        flex-shrink: 0;
+                    }
+                    .slide img {
+                        width: 300px;
+                        height: 500px;
+                       
+                    }  */    
+        #app{
+            clear:both; 
+            text-align: center; 
+            margin: 20px auto; 
+            position: relative;
+            }
+           #app h2 {
+            color:#000000; 
+            font-size: 45px; 
+            position: absolute; 
+            top:-790px; 
+            right:90px;
+                    }
+           #app span {
+            color:#FF7E4B; 
+                    }
+           #app p{
+            color:#000000; 
+            font-size: 20px; 
+            position: absolute; 
+            top:-420px; 
+            right:220px;
+                }
+           #app .text{
+            margin-top: 150px;
+            margin-right:170px;
+                    }
+           #app img{
+            margin:200px 0; 
+            clear:both; 
+            position: absolute; 
+                    }
+           #app .apple{
+            top:-370px; 
+            right:560px; 
+            width:180px; 
+            height:50px;
+                    }
+           #app .google{
+            top:-370px; 
+            right:300px; 
+            width:180px; 
+            height:50px;}
+           #app img a{ cursor: pointer;}
+           #app .logoImg{
+            width: 30px; 
+            height: 30px; 
+            position: absolute; 
+            top:-200px; 
+            right:0;}                  
+                 
+        #content{}
+           .intro,.park,.home,.myCar {width:100%; height:700px; clear: both; margin-top: 20px; position: relative;}
+           .intro,.park{float:left; }
+           .home,.myCar{float:right; background-color: #E8E8E8;}
+                h2{
+                    text-align:center; 
+                    color:#FF7E4B; 
+                    font-size: 45px; 
+                    position:absolute; 
+                    font-weight:bold; 
+                    margin-top:200px;} 
+                p{
+                    text-align:center;
+                    clear: both; 
+                    position:absolute; 
+                    margin-top: 50px; 
+                    font-size:30px;
+                } 
+                span{display: block;}
+
+                .img1,.img3{ margin-right: 0px; position: absolute;}
+                .img2,.img4{ margin-left: 0px; position: absolute;}
+                .img1{top:-280px; right:-150px;}
+                .img2{top:-150px; left:-200px; width:1050px;}
+                .img3{top:-150px; right:-180px; width:1000px;}
+                .img4{top:-150px; left:-210px; width:1050px;}
+
+                .intro h2{left:160px; top:-30px;}
+                .intro p{ left:160px; top:320px;}
+                .home h2{ right:200px; top:60px;}
+                .home p{  right:210px; top:330px;}
+                .park h2{left:200px; top:30px;}
+                .park p{ left:100px; top:290px;}
+                .myCar h2{right:340px; top:60px;}
+                .myCar p{ right:120px; top:330px;}
+              
+
+
+        .bar {
+            position:fixed; 
+            bottom:100px; 
+            right:0; 
+            z-index: 9999;
+            }
+
+    #footer{
+        width:100%; 
+        height:200px; 
+        background-color: #E8E8E8; 
+        padding-top: 100px; 
+            }
+        .address{margin-top: 100px;}
+        #footer a{display: inline; float:left;}
+        #footer h1{float:left; display: inline;}
+        #footer span{display: inline;}
+        footer{width: 100%;background-color: #D9D9D9;}
+        #foot {height: 150px;}
+            .flfl li {margin-right: 20px;}
+            .bold {font-weight: bold;font-size: 17px;text-decoration: underline;}
+            #foot ul li{display: inline;}
+            #foot ul {margin-bottom: 10px;}
+            #foot ul li a{color: rgb(0, 0, 0);}
+            #foot {padding-left: 20px;padding-top: 20px;}
+            #foot h1 span{font-size: 16px;}
+            address{text-align: center; color: gray; position: relative; top:100px; left:-200px;}
+
+            .sns {position: relative; left: 80%; top:-100px;}
+        .sns li{display: inline; }
+        .sns ul li img {transform: scale(1.5); margin-right: 50px;}
+}            
