@@ -13,8 +13,8 @@ $(function(){
 
     //아코디언 박스 슬라이드
     $(".boardWrap li").click(function(){
-        $(".accordionBox").removeClass("slide");
-        $(this).find(".accordionBox").addClass("slide");
+        let selectAccordion = $(this).find(".accordionBox");
+        $(".accordionBox").not(selectAccordion).removeClass("slide");
+        selectAccordion.toggleClass("slide");
     })
-
 })
