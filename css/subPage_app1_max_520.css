@@ -53,11 +53,11 @@ body {
                             background-color: #E8E8E8;
                         }
                         #iphone {
-                            width: 50%; /* 부모 요소의 너비의 50%로 설정 */
+                            width: 60%; /* 부모 요소의 너비의 50%로 설정 */
                             max-width: 100%; /* 부모 요소의 최대 너비를 초과하지 않도록 설정 */
                                 position: absolute;
                                 top:0%;
-                                left: 10%;
+                                right: 5%;
                                 transform: translateX(-50%);
                         }
                         #app{
@@ -73,7 +73,7 @@ body {
                             width: 100%;
                             text-align:center; 
                             color:#FF7E4B; 
-                            font-size: 40px; 
+                            font-size: 45px; 
                             position:absolute; 
                             top: 10%;
                             margin: 0 auto;    
@@ -106,14 +106,14 @@ body {
                                 #icon{ position: relative;}
                                     .apple{
                                         float:left;
-                                        width:25%;
+                                        width:28%;
                                         height:auto;
                                         margin-top: -275%;
                                         margin-left: 22%;
                                     }
                                     .google{
                                         float:left;
-                                        width:25%;
+                                        width:28%;
                                         height:auto;
                                         margin-top: -275%;
                                         margin-left: 58%;

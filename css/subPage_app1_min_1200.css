@@ -168,9 +168,9 @@ li {list-style-type:none;}
                     height: 100vh;
                     }
                     .introImg{
-                    width: 80%;
+                    width: 140%;
                     position: absolute;
-                    top: 30%;
+                    top: 0%;
                     left: 50%;
                     transform: translateX(-50%);
                             }
@@ -207,9 +207,9 @@ li {list-style-type:none;}
                         height: 100vh;
                         }
                         .homeImg{
-                        width: 35%;
+                        width: 130%;
                         position: absolute;
-                        top: 30%;
+                        top: 0%;
                         left: 50%;
                         transform: translateX(-50%);
                                 }
@@ -245,9 +245,9 @@ li {list-style-type:none;}
                     height: 100vh;
                     }
                     .parkImg{
-                    width: 60%;
+                    width: 120%;
                     position: absolute;
-                    top: 30%;
+                    top: 0%;
                     left: 50%;
                     transform: translateX(-50%);
                             }
@@ -283,9 +283,9 @@ li {list-style-type:none;}
                             height: 100vh;
                             }
                             .myCarImg{
-                                width: 35%;
+                                width: 130%;
                                 position: absolute;
-                                top: 30%;
+                                top: 0%;
                                 left: 50%;
                                 transform: translateX(-50%);
                                     }

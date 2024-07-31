@@ -57,7 +57,7 @@ li {list-style-type:none;}
                             height: 100vh;
                         }
                         #iphone {
-                                width: 50%;
+                                width: 30%;
                                 max-width: 100%;
                                 position: absolute;
                                 bottom: -25%;
@@ -98,7 +98,7 @@ li {list-style-type:none;}
                                 width: 100%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 35px; 
+                                font-size: 20px; 
                                 position:absolute; 
                                 top: 40%;
                                 margin: 0 auto;   
@@ -106,7 +106,7 @@ li {list-style-type:none;}
                             }         
                                 #app .text{
                                     font-size:25px;
-                                    margin-top: 40%;
+                                    margin-top: 20%;
                                 }
                                 #icon{ position: relative;}
                                     .apple{
@@ -114,7 +114,7 @@ li {list-style-type:none;}
                                         width:15%;
                                         height:auto;
                                         margin-top: -20%;
-                                        margin-left: 12%;
+                                        margin-left: 15%;
                                     }
                                     .google{
                                         float:left;
@@ -139,9 +139,9 @@ li {list-style-type:none;}
             height: 100vh;
             }
             .introImg{
-            width: 80%;
+            width: 140%;
             position: absolute;
-            top: 30%;
+            top: 10%;
             left: 50%;
             transform: translateX(-50%);
                     }
@@ -180,9 +180,9 @@ li {list-style-type:none;}
                         height: 100vh;
                         }
                         .homeImg{
-                        width: 40%;
+                        width: 150%;
                         position: absolute;
-                        top: 30%;
+                        top: 5%;
                         left: 50%;
                         transform: translateX(-50%);
                                 }
@@ -219,9 +219,9 @@ li {list-style-type:none;}
                     height: 100vh;
                     }
                     .parkImg{
-                    width: 60%;
+                    width: 130%;
                     position: absolute;
-                    top: 30%;
+                    top: 10%;
                     left: 50%;
                     transform: translateX(-50%);
                             }
@@ -258,9 +258,9 @@ li {list-style-type:none;}
                             height: 100vh;
                             }
                             .myCarImg{
-                                width: 50%;
+                                width: 140%;
                                 position: absolute;
-                                top: 30%;
+                                top: 10%;
                                 left: 50%;
                                 transform: translateX(-50%);
                                     }
