@@ -10,141 +10,287 @@ li {list-style-type:none;}
  @media screen and (min-width:521px) and (max-width:1199px){
 
     
-    #wrap{}
+    #wrap{background-color: #E8E8E8;}
     #header { width:100%; height:200px; background-color: #E8E8E8;}
          h1 { display: inline;  margin: 20px;}
-
             #menu { 
                 position: absolute; 
                 top: 30px; 
                 left: 300px; }
-                
-                #menu li { 
-                    display: inline-block; 
-                    margin-right: 40px; }
-                
-                #menu li a {
-                    color: black; 
-                    font-weight: bold;}
+            #menu li { 
+                display: inline-block; 
+                margin-right: 40px; }
+            
+            #menu li a {
+                color: black; 
+                font-weight: bold;}
+            
                 .hamBtn {
                     width: 30px;
                     height: 30px;
                     position: absolute;
                     top: 3%;
                     right: 3%;
-                    cursor: pointer;
-                }
-    #container{}
-        #slider {      
-            position: relative;
-            width: 100%;   /*슬라이더 전체 너비 */
-            height: 600px;  /* 슬라이더 높이 */
-            margin: 0 auto;   /* 가운데 정렬 */
-            overflow: hidden;
-            background-color: #E8E8E8; 
-                 }
-            .cover2{
-                position: absolute;
-                bottom:-90px;
-                left:-40px;
-                width:600px;
-                height:700px;
-                     }
-            .imgView{display: none;}    
-           
-        #app{
-        clear:both; 
-        text-align: center; 
-        margin: 20px auto; 
-        position: relative;
-        }
-            #app h2 {
-                color:#000000; 
-                font-size: 35px; 
-                position: absolute; 
-                top:-740px; 
-                right:30px;
-                        }
-            #app span {
-                color:#FF7E4B; 
-                        }
-            #app p{
-                color:#000000; 
-                font-size: 20px; 
-                position: absolute; 
-                top:-430px; 
-                right:40px;
+                    cursor: pointer;}
+                    .sns{display: none;}
+                /*.sns {
+                        position: absolute;
+                        top: 35px;
+                        right: 100px;
                     }
-            #app .text{
-                margin-top: 150px;
-                margin-right: 180px;
-                        }
-            #app img{
-                margin:200px 0; 
-                clear:both; 
-                position: absolute; 
-                        }
-            #app .apple{
-                top:-400px; 
-                right:140px; 
-                width:180px; 
-                height:50px;
-                        }
-            #app .google{
-                top:-400px; 
-                right:390px; 
-                width:180px; 
-                height:50px;}
-            #app img a{cursor: pointer;}
-            #app .logoImg{
-                width: 30px; 
-                height: 30px; 
-                position: absolute; 
-                top:-200px; 
-                right:0;}      
+                    .sns li{display: inline;margin-right: 20px;}  */  
 
-        #content{}
-           .intro,.park,.home,.myCar {width:100%; height:600px; clear: both; margin-top: 20px; position: relative;}
-           .intro,.park{float:left; }
-           .home,.myCar{float:right; background-color: #E8E8E8;}
-                h2{
-                    text-align:center; 
-                    color:#FF7E4B; 
-                    font-size: 40px; 
-                    position:absolute; 
-                    font-weight:bold; 
-                    margin-top:200px;} 
-                p{
-                    text-align:center;
-                    clear: both; 
-                    position:absolute; 
-                    margin-top: 50px; 
-                    font-size:25px;
-                } 
-                span{display: block;}
+                    #container { clear:both }
+                    #slider{
+                        width:100%;
+                        height:100vh;
+                        background-color: #E8E8E8;
+                        
+                        
+                    /*background: #E8E8E8 url('../images/iPhone 12 Pro.png') no-repeat left bottom;*/ 
+                    }
+                       
+                        #iphoneWrap{
+                            float: right;
+                            position: relative;
+                            width: 30%;
+                            height: 100vh;
+                        }
+                        #iphone {
+                                width: 50%;
+                                max-width: 100%;
+                                position: absolute;
+                                bottom: -25%;
+                                left: 10%;
+                                transform: translateX(-50%);
+                        }
+                        #app{
+                            float: left;
+                                position: relative;
+                                width: 60%;
+                                height: 100vh;
+                                text-align: center;
+                                left:5%;
+                        }
+                            #app h2{
+                            width: 100%;
+                            text-align:center; 
+                            color:#FF7E4B; 
+                            font-size: 60px; 
+                            position:absolute; 
+                            top: 5%;
+                            margin: 0 auto;    
+                            font-weight: 900;
+                        } 
+                            #app span{
+                                width: 100%;
+                                text-align:center; 
+                                color:#000; 
+                                font-size: 35px; 
+                                font-weight: 500px;
+                                position:absolute; 
+                                top: 30%;
+                                left:0;
+                                margin: 0 auto; 
+                                font-weight: 900;    
+                            }         
+                                #app p{
+                                width: 100%;
+                                text-align:center; 
+                                color:#000; 
+                                font-size: 35px; 
+                                position:absolute; 
+                                top: 40%;
+                                margin: 0 auto;   
+                                
+                            }         
+                                #app .text{
+                                    font-size:25px;
+                                    margin-top: 40%;
+                                }
+                                #icon{ position: relative;}
+                                    .apple{
+                                        float:left;
+                                        width:15%;
+                                        height:auto;
+                                        margin-top: -20%;
+                                        margin-left: 12%;
+                                    }
+                                    .google{
+                                        float:left;
+                                        width:15%;
+                                        height:auto;
+                                        margin-top: -20%;
+                                        margin-left: 38%;
+                                    }
+            .bar {
+                position:fixed; 
+                bottom:100px; 
+                right:0; 
+                z-index: 9999;
+                }
 
-                .img1,.img2,.img3,.img4{ position: absolute;}
-                
-                .img1{top:-210px; right:-170px; width:950px;}
-                .img2{top:-170px; left:-200px; width:950px;}
-                .img3{top:-150px; right:-220px; width:850px;}
-                .img4{top:-170px; left:-250px; width:950px;}
-
-                .intro h2{left:100px; top:-30px;}
-                .intro p{ left:100px; top:270px;}
-                .home h2{ right:80px; top:30px;}
-                .home p{  right:100px; top:280px;}
-                .park h2{left:50px; top:30px;}
-                .park p{ left:10px; top:290px;}
-                .myCar h2{right:200px; top:10px;}
-                .myCar p{ right:20px; top:240px;}
-              
-        .bar {
-            position:fixed; 
-            bottom:100px; 
-            right:0; 
-            z-index: 9999;
+        #content{height:100vh; }
+        .intro{clear:both; background-color: #E8E8E8;}
+        .introImgwrap{
+            float: left;
+            position: relative;
+            width: 40%;
+            height: 100vh;
             }
+            .introImg{
+            width: 80%;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+                    }
+        .introTxt{
+            float: left;
+            position: relative;
+            width: 60%;
+            height: 100vh;
+            left:-3%;
+        }   
+            .introTxt h2{
+                width: 100%;
+                text-align:center; 
+                color:#FF7E4B; 
+                font-size: 38px; 
+                position:absolute; 
+                top: 30%;
+                margin: 0 auto;    
+            }         
+            .introTxt p{
+                width: 100%;
+                text-align:center; 
+                color:#000; 
+                font-size: 30px; 
+                position:absolute; 
+                top: 40%;
+                margin: 0 auto;    
+            }         
+          
+                  
+            .home{}
+                .homeImgwrap{
+                        float: right;
+                        position: relative;
+                        width: 40%;
+                        height: 100vh;
+                        }
+                        .homeImg{
+                        width: 40%;
+                        position: absolute;
+                        top: 30%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                                }
+                .homeTxt{
+                        float: left;
+                        position: relative;
+                        width: 60%;
+                        height: 100vh;
+                        left:5%;
+                    }   
+                        .homeTxt h2{
+                            width: 100%;
+                            text-align:center; 
+                            color:#FF7E4B; 
+                            font-size: 38px; 
+                            position:absolute; 
+                            top: 30%;
+                            margin: 0 auto;    
+                        }         
+                        .homeTxt p{
+                            width: 100%;
+                            text-align:center; 
+                            color:#000; 
+                            font-size: 30px; 
+                            position:absolute; 
+                            top: 40%;
+                            margin: 0 auto;    
+                        }
+            .park{clear:both;}
+                .parkImgwrap{
+                    float: left;
+                    position: relative;
+                    width: 40%;
+                    height: 100vh;
+                    }
+                    .parkImg{
+                    width: 60%;
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                            }
+                .parkTxt{
+                    float: left;
+                    position: relative;
+                    width: 60%;
+                    height: 100vh;
+                    left:-5%;
+                }   
+                    .parkTxt h2{
+                        width: 100%;
+                        text-align:center; 
+                        color:#FF7E4B; 
+                        font-size: 38px; 
+                        position:absolute; 
+                        top: 30%;
+                        margin: 0 auto;    
+                    }         
+                    .parkTxt p{
+                        width: 100%;
+                        text-align:center; 
+                        color:#000; 
+                        font-size: 30px; 
+                        position:absolute; 
+                        top: 40%;
+                        margin: 0 auto;    
+                    }
+            .myCar{background-color: #E8E8E8;}
+                .myCarImgwrap{
+                            float: right;
+                            position: relative;
+                            width: 40%;
+                            height: 100vh;
+                            }
+                            .myCarImg{
+                                width: 50%;
+                                position: absolute;
+                                top: 30%;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                    }
+                    .myCarTxt{
+                            float: left;
+                            position: relative;
+                            width: 60%;
+                            height: 100vh;
+                            left:5%;
+                        }   
+                            .myCarTxt h2{
+                                width: 100%;
+                                text-align:center; 
+                                color:#FF7E4B; 
+                                font-size: 38px; 
+                                position:absolute; 
+                                top: 30%;
+                                margin: 0 auto;    
+                            }         
+                            .myCarTxt p{
+                                width: 100%;
+                                text-align:center; 
+                                color:#000; 
+                                font-size: 30px; 
+                                position:absolute; 
+                                top: 40%;
+                                margin: 0 auto;    
+                            }          
+ 
+           
 
     #footer{ clear: both; background-color: #D9D9D9; position: relative; text-align: center;}
         #foot {height: 150px;  padding: 20px 0 0 20px; }
@@ -159,8 +305,5 @@ li {list-style-type:none;}
                     position: relative;
                     top:40px;
                 }
-            .sns{display: none;}
-            /*.sns {position: absolute; right: 50px; top:30px;}
-                .sns li{display: inline; }
-                .sns ul li img {transform: scale(1.5); margin-right: 50px;} */
+           
  }
