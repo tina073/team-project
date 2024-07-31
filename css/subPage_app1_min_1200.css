@@ -49,7 +49,7 @@ li {list-style-type:none;}
                     .cover2{
                         position: absolute;
                         top:-30px;
-                        left:1px;
+                        left:180px;
                         width:720px;
                         height:750px;
                     }
@@ -93,7 +93,7 @@ li {list-style-type:none;}
             font-size: 45px; 
             position: absolute; 
             top:-790px; 
-            right:90px;
+            right:290px;
                     }
            #app span {
             color:#FF7E4B; 
@@ -102,12 +102,12 @@ li {list-style-type:none;}
             color:#000000; 
             font-size: 20px; 
             position: absolute; 
-            top:-420px; 
-            right:220px;
+            top:-490px; 
+            right:390px;
                 }
            #app .text{
             margin-top: 150px;
-            margin-right:170px;
+            margin-right:210px;
                     }
            #app img{
             margin:200px 0; 
@@ -115,14 +115,14 @@ li {list-style-type:none;}
             position: absolute; 
                     }
            #app .apple{
-            top:-370px; 
-            right:560px; 
+            top:-440px; 
+            right:810px; 
             width:180px; 
             height:50px;
                     }
            #app .google{
-            top:-370px; 
-            right:300px; 
+            top:-440px; 
+            right:520px; 
             width:180px; 
             height:50px;}
            #app img a{ cursor: pointer;}
@@ -155,19 +155,19 @@ li {list-style-type:none;}
 
                 .img1,.img3{ margin-right: 0px; position: absolute;}
                 .img2,.img4{ margin-left: 0px; position: absolute;}
-                .img1{top:-280px; right:-150px;}
-                .img2{top:-150px; left:-200px; width:1050px;}
-                .img3{top:-150px; right:-180px; width:1000px;}
-                .img4{top:-150px; left:-210px; width:1050px;}
+                .img1{top:-280px; right:0px;}
+                .img2{top:-180px; left:-50px; width:1100px;}
+                .img3{top:-150px; right:0px; width:1000px;}
+                .img4{top:-180px; left:-50px; width:1100px;}
 
-                .intro h2{left:160px; top:-30px;}
-                .intro p{ left:160px; top:320px;}
-                .home h2{ right:200px; top:60px;}
-                .home p{  right:210px; top:330px;}
-                .park h2{left:200px; top:30px;}
-                .park p{ left:100px; top:290px;}
-                .myCar h2{right:340px; top:60px;}
-                .myCar p{ right:120px; top:330px;}
+                .intro h2{left:300px; top:-30px;}
+                .intro p{ left:300px; top:320px;}
+                .home h2{ right:380px; top:60px;}
+                .home p{  right:380px; top:330px;}
+                .park h2{left:300px; top:30px;}
+                .park p{ left:210px; top:290px;}
+                .myCar h2{right:590px; top:60px;}
+                .myCar p{ right:400px; top:330px;}
               
 
 
