@@ -15,6 +15,13 @@ $(function() {
         $('.myCarImg').css('top', `${Math.max(100 - ((scrollTop - (introHeight + homeHeight + parkHeight)) / myCarHeight * 100), 0)}vh`);
     });
 
-    
+   /*챗봇*/ 
+    $(".bar").find(".chat").click(function(){
+        $(".chatIntro").show();
+    });
+    $(" #close-chat").click(function(){
+        $(".chatIntro").hide();
+    });
+
     
 });
