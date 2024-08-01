@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+
+       
+       
+       
+       /*chatbot intro*/    
+        .chatIntro{
+            position:fixed;
+            bottom: 90px;
+            right:0;
+            width:400px;
+            border:1px solid #ccc;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 999999;
+            display: none;
+        }
+        .chat-header{
+            position: relative;
+            padding: 10px;
+            background-color: #001F3F;
+            color: #fff;
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+        }
+            #Logo-chat {
+                width:50px;
+                height:50px;
+                border-radius: 15px;
+            }
+            #close-chat{ 
+                position: absolute; 
+                bottom:-590px; 
+                right: 0px; 
+                cursor: pointer;
+                padding: 20px;
+                border-radius: 40%;
+                border: none;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                z-index: 99;
+            }
+        .chat-body{
+            height: 500px;
+            padding: 10px;
+            overflow-y:auto;
+            background-color: #f3f0f0;
+            position: relative;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+            .bodyLogoImg{
+                
+            }
+                #Logo-chatbody{
+                    width:30px;
+                    height:30px;
+                    border-radius: 15px;
+                    position: absolute;
+                    top:15px;
+
+                }
+            .bodyTxt{
+                position: absolute;
+                top:18px;
+                left: 85px;
+                z-index: 2;
+            }
+                #nookBot{font-weight: bold; margin-bottom: 45px; margin-left: -30px;}
+                
+            .send{
+                position: absolute;
+                top:250px;
+                left: 100px;
+                padding: 5px;
+                width:190px;
+                height:30px;
+                text-align: center;
+                font-weight: bold;
+                background-color: #FFD2C0;
+                border-radius: 15px;
+                z-index: 3;
+            }
+
+            .messages{
+                position: absolute;
+                top:60px;
+                right: 25px;
+                background-color: #fff;
+                width: 350px;
+                height:250px;
+                border-radius: 30px;
+            }
+
+        .chat-footer{
+            display: flex;
+            align-items: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: #ccc;
+        }
+            /* #chat-input { 
+                flex: 1;
+                width:300px;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                
+            }
+            #send-message {
+                padding:5px;
+                border:none;
+                border-radius: 5px;
+            }*/
+
+            /* chatbot main */
+
