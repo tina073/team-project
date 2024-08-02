@@ -9,10 +9,7 @@ li { list-style: none; }
 a { text-decoration: none; color: #000; }
 /*--------reset--------*/
 @media screen and (min-width:1200px) {
-body { 
-    font-size:16px;
-    overflow-x: hidden;
-}
+body { font-size:16px; }
 
     /*헤더*/    
     h1 { margin: 10px; }
