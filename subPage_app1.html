@@ -7,11 +7,12 @@
     <link rel="stylesheet" media="(max-width:520px)"type="text/css" href="css/subPage_app1_max_520.css">
     <link rel="stylesheet" media="(max-width:1199px)"type="text/css" href="css/subPage_app1_max_1199.css">
     <link rel="stylesheet" media="(min-width:1200px)"type="text/css" href="css/subPage_app1_min_1200.css">
-    <link rel="stylesheet" media="(min-width:1200px)"type="text/css" href="css/chatbot.css">
+    <link rel="stylesheet" type="text/css" href="css/chatbot.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/subPage_app1.js"></script>
     <script src="js/hamMenu.js"></script>
+    <script src="js/chatBot.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -22,7 +23,7 @@
                 <li><a href="#">이용방법</a></li>
                 <li><a href="#">스마트폰 앱</a></li>
                 <li><a href="#">도움말</a></li>
-                <li class="F&Q"><a href="subPage_F&Q.html">문의사항</a></li>
+                <li class="F&Q"><a href="subPage_FQ.html">문의사항</a></li>
             </ul>
             <div class="sns">
                 <ul>
@@ -127,8 +128,8 @@
                     <div class="bodyTxt">
                         <h3 id="nookBot">nook bot</h3>
                         <p>안녕하세요 nook입니다.😃​</p>
-                        <h4>운영시간</h4>
-                        <p>평일 오전 10:00~ 18:00 <br/> - 점심시간 (12:00~ 13:00)제외 </p> <br/> - 주말, 공휴일 휴무<br/> 문의 사항을 말씀해주세요. </p>
+                        <p>🕒​운영시간</p>
+                        <p>평일 오전 10:00~ 18:00 <br/> - 점심시간 (12:00~ 13:00)제외 </p> <br/> - 주말, 공휴일 휴무</p>
                     </div>
                     <div class="send">문의하기✈️</div>
                     <div class="messages"></div>
@@ -142,39 +143,45 @@
             <div class="chatMain">
                 <div class="main-chat-header">
                     <div class="main-headerLogoImg">
-                        <img id="main-chat-logo" src="images/appLogo.png" alt="로고 이미지">
+                        <img id="main-chat-logo1" src="images/appLogo.png" alt="로고 이미지">
+                        <img id="main-chat-logo2" src="images/angle-left-solid.svg" alt="angle-left">
                     </div>
                     <div class="main-headerTxt">
-                        <h3 class="">nook</h3>
+                        <h3 id="mainNook">nook</h3>
                         <p>오후 1:00부터 운영합니다</p>
                     </div>
                 </div>
                 <div class="main-chat-body">
                     <div class="main-bodyLogoImg">
-                        <a href="#"><img id="main-chat-logo2" src="images/appLogo.png" alt="로고 이미지" ></a>
+                        <a href="#"><img id="main-chat-logo3" src="images/appLogo.png" alt="로고 이미지" ></a>
                     </div>
                     <div class="main-bodyTxt">
-                        <p>nook에 문의하기</p>
+                        <h3 id="nook문의">nook에 문의하기</h3>
                         <p>운영시간 보기</p>
+                    </div>
+                    <div class="main-bodyLogoImg2">
+                        <a href="#"><img id="main-chat-logo4" src="images/appLogo.png" alt="로고 이미지" ></a>
                     </div>
                     <div class="main-bodyTxt2">
                         <h3 id="main-nookBot">nook bot</h3>
-                        <p>안녕하세요 nook입니다.😃​</p>
-                        <h4>운영시간</h4>
+                        <p>안녕하세요 nook입니다.😃<br/>​</p>
+                        <p>🕒​운영시간</p>
                         <p>평일 오전 10:00~ 18:00 <br/> - 점심시간 (12:00~ 13:00)제외 </p> <br/> - 주말, 공휴일 휴무<br/> 문의 사항을 말씀해주세요. </p>
                     </div>
-                    <div class="main-send">문의하기✈️</div>
+                    <!-- <div class="main-send">문의하기✈️</div> -->
                     <div class="main-messages"></div>
                     <div class="options">
-                        <button>계정 · 회원정보</button>
-                        <button>예약 · 정기권</button>
-                        <button>결제 · 재결제</button>
-                        <button>할인권</button>
-                        <button>환불</button>
-                        <button>중빙서류</button>
-                      </div>
+                        <p>계정 · 회원정보</p>
+                        <p>예약 · 정기권</p>
+                        <p>결제 · 재결제</p>
+                        <p>할인권</p>
+                        <p>환불</p>
+                        <p>중빙서류</p>
+                    </div>
                 </div>
-                <div class="main-chat-footer"></div>
+                <div class="main-chat-footer">
+                    <button id="main-close-chat" class="close-chat">✖</button>
+                </div>
 
             </div><!-- chat bot Main 끝 -->
         </div> <!--container 끝-->
