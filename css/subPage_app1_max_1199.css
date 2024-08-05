@@ -12,36 +12,84 @@ li {list-style-type:none;}
     
     #wrap{background-color: #E8E8E8;}
     #header { width:100%; height:200px; background-color: #E8E8E8;}
-         h1 { display: inline;  margin: 20px;}
-            #menu { 
-                position: absolute; 
-                top: 30px; 
-                left: 300px; }
-            #menu li { 
-                display: inline-block; 
-                margin-right: 40px; }
-            
-            #menu li a {
-                color: black; 
-                font-weight: bold;}
-            
-                .hamBtn {
-                    width: 30px;
-                    height: 30px;
-                    position: absolute;
-                    top: 3%;
-                    right: 3%;
-                    cursor: pointer;}
-                    .sns{display: none;}
-                /*.sns {
-                        position: absolute;
-                        top: 35px;
-                        right: 100px;
-                    }
-                    .sns li{display: inline;margin-right: 20px;}  */  
+        /*로고*/    
+    h1 { 
+        margin: 10px; 
+        position: relative; 
+        z-index: 9999;
+    }
 
-                    #container { clear:both }
-                    #slider{
+    /*네비게이션*/
+    .gnb {
+        margin: 130px 0 0 20px;
+        display: none;
+    }
+
+    /*addClass*/
+    .gnb.open {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 8888;
+    }
+        .gnb li {       
+            margin-top: 20px;     
+            display: block;
+            margin-right: 40px;
+        }
+            .gnb li a {
+                font-weight: bold;
+                font-size: 35px;
+                color: #fff;
+            }
+            .gnb li:hover a {
+                color: #FF7E4B;
+            }
+    .sns { display: none; }
+    
+               /*햄버거 버튼*/
+            .hamBtn, .hamBtn span {
+                display: inline-block;
+                transition: all 0.4s;
+                box-sizing: border-box;
+                    }
+                
+                    .hamBtn {
+                        clear:both;
+                        position: absolute; /*span의 기준이 되기 때문에 absolute로 설정하면 span의 위치가 틀어져 스크립트 효과가 나타나지 않는다*/
+                        right: 5%;
+                        width: 50px;
+                        height: 44px;
+                        z-index: 9999;/*h1보다 높거나 같지 않으면 스크립트 효과가 나타나지 않음*/
+                    }
+                
+                        .hamBtn span {
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            height: 4px;
+                            background-color: #000;
+                            border-radius: 4px;
+                        }
+                        .hamBtn span:nth-of-type(1) { top: 0; }
+                        .hamBtn span:nth-of-type(2) { top: 20px; }
+                        .hamBtn span:nth-of-type(3) { bottom: 0; }
+                        /*active-1의 addClass*/
+                        .hamBtn.active-1 span:nth-of-type(1) { transform: translateY(20px) rotate(-45deg); }
+                        .hamBtn.active-1 span:nth-of-type(2) { opacity: 0; }
+                        .hamBtn.active-1 span:nth-of-type(3) { transform: translateY(-20px) rotate(45deg); }
+                    .hamBg {
+                        background-color: #001F3F;
+                        position: fixed;
+                        top: 0;
+                        right: -100%;
+                        z-index: 7777;
+                        width: 100%;
+                        height: 100vh;
+                    }
+
+        #container { clear:both }
+             #slider{
                         width:100%;
                         height:100vh;
                         background-color: #E8E8E8;

@@ -12,66 +12,66 @@ li {list-style-type:none;}
     
    #wrap{background-color: #E8E8E8;}
     #header { width:100%; height:200px; background-color: #E8E8E8;}
-        h1 { display: inline;  margin: 20px;}
-            #menu { 
-                position: absolute; 
-                top: 30px; 
-                left: 300px; }
-            
-            #menu li { 
-                display: inline-block; 
-                margin-right: 40px; }
-            
-            #menu li a {
-                color: black; 
-                font-weight: bold;}
-            
-            .hamBtn {
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                top: 3%;
-                right: 3%;
-                cursor: pointer;
-            }
-            .sns {
-                position: absolute;
-                top: 35px;
-                right: 100px;
-            }
-                .sns li{display: inline;margin-right: 20px;}
+       /*헤더*/    
+    h1 { margin: 10px; }
+
+    /*네비게이션*/
+    .gnb {
+        position: absolute;
+        top: 30px;
+        left:300px;
+    }
+    .gnb li {
+        display: inline-block;
+        margin-right: 40px;
+    }
+    .gnb li a {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .gnb li:hover a {
+        color: #aaa;
+    }
+    .hamBtn {
+        display: none;
+    }
+    .sns {
+        position: absolute;
+        top: 35px;
+        right: 100px;
+    }
+    .sns li{display: inline;margin-right: 20px;}
+    
+    
     #container { clear:both }
         #slider{
             width:100%;
             height:100vh;
             background-color: #E8E8E8;
-            
-            
-        /*background: #E8E8E8 url('../images/iPhone 12 Pro.png') no-repeat left bottom;*/ 
         }
            
-            #iphoneWrap{
-                float: right;
-                position: relative;
-                width: 40%;
-                height: 100vh;
+        #iphoneWrap{
+            float: right;
+            position: relative;
+            width: 40%;
+            height: 100vh;
             }
-            #iphone {
-                    width: 90%;
-                    max-width: 100%;
-                    position: absolute;
-                    bottom: -25%;
-                    left: 70%;
-                    transform: translateX(-50%);
+        #iphone {
+                width: 90%;
+                max-width: 100%;
+                position: absolute;
+                bottom: -25%;
+                left: 70%;
+                transform: translateX(-50%);
             }
             #app{
                 float: left;
-                    position: relative;
-                    width: 60%;
-                    height: 100vh;
-                    text-align: center;
+                position: relative;
+                width: 60%;
+                height: 100vh;
+                text-align: center;
             }
-                #app h2{
+            #app h2{
                 width: 100%;
                 text-align:center; 
                 color:#FF7E4B; 
