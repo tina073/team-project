@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+@media screen and (max-width:520px) {
+    #wrapper {
+        height: 100vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    #contentWrap {
+        flex: 1;
+    }
+    
+    .quickMenu {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 999999;
+    }
+    
+    .quickTopBtn {
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        border: 2px solid #001F3F;
+        border-radius: 50%;
+        color: #001F3F;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    
+    .quickTopBtn.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .chatBotBtn {
+        width: 60px;
+        height: 60px;
+        background: #001F3F;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 중앙 정렬 */
+        cursor: pointer;
+        margin-top: 10px;
+        /* quickTopBtn과 간격을 줌 */
+    }
+    
+    #header {
+        position: relative;
+        width: 100%;
+        background-color: #001F3F;
+        height: 300px;
+    
+    }
+    
+    /*헤더*/
+    h1 img {
+        margin: 10px;
+    }
+    
+    /*네비게이션*/
+    .gnb {
+        margin: 130px 0 0 20px;
+        display: none;
+    }
+    .gnb.open {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 8888;
+    }
+        .gnb li {       
+            margin-top: 20px;     
+            display: block;
+            margin-right: 40px;
+        }
+            .gnb li a {
+                font-weight: bold;
+                font-size: 35px;
+                color: #fff;
+            }
+            .gnb li:hover a {
+                color: #FF7E4B;
+            }
+    .sns { display: none; }
+    
+      /*햄버거 버튼*/
+      .hamBtn, .hamBtn span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+    }
+    
+    .hamBtn {
+        position: relative; /*span의 기준이 되기 때문에 absolute로 설정하면 span의 위치가 틀어져 스크립트 효과가 나타나지 않는다*/
+        top: -60px;
+        left: 90%;
+        width: 50px;
+        height: 44px;
+        z-index: 9999;  /*h1보다 높거나 같지 않으면 스크립트 효과가 나타나지 않음*/
+    }
+    
+        .hamBtn span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #ffffff;
+            border-radius: 4px;
+        }
+        .hamBtn span:nth-of-type(1) { top: 0; }
+        .hamBtn span:nth-of-type(2) { top: 20px; }
+        .hamBtn span:nth-of-type(3) { bottom: 0; }
+        /*active-1의 addClass*/
+        .hamBtn.active-1 span:nth-of-type(1) { transform: translateY(20px) rotate(-45deg); }
+        .hamBtn.active-1 span:nth-of-type(2) { opacity: 0; }
+        .hamBtn.active-1 span:nth-of-type(3) { transform: translateY(-20px) rotate(45deg); }
+    .hamBg {
+        background-color: #001F3F;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 7777;
+        width: 100%;
+        height: 100vh;
+    }
+   
+    .title {
+        color: #FF7E4B;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 100px;
+    }
+    .sns li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    #contentWrap {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    
+    #loginWrap {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+    }
+    
+    #loginLeft {
+        width: 50%;
+        display: none;
+    }
+    
+    .loginImg img {
+        width: 80%;
+    }
+    
+    #loginArea {
+        width: 520px;
+    }
+    
+    #loginArea p {
+        font-weight: bold;
+    }
+    
+    .idBox {
+        width: 338px;
+        margin: 0 auto;
+    }
+    .sns {display: none;}
+    input {
+        width: 300px;
+        height: 52px;
+        padding: 0 19px;
+        background-color: #fff;
+        border: #e6e6e6 1px solid;
+        border-radius: 10px;
+        color: #222;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    input:last-child {
+        width: 300px;
+        height: 52px;
+        padding: 0 19px;
+        background-color: #fff;
+        border: #e6e6e6 1px solid;
+        border-radius: 10px;
+        color: #222;
+        font-size: 16px;
+    
+    }
+    
+    .btn_lg span {
+        width: 300px;
+        display: block;
+        height: 64px;
+        line-height: 64px;
+        box-sizing: border-box;
+        background: #a2d0ff;
+        border-radius: 32px;
+        color: #000000;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: -0.9px;
+        text-align: center;
+        transition: all .3s;
+        margin: 20px auto;
+    }
+    
+    .btn_lg:hover span {
+        background: #001F3F;
+        color: #FF7E4B;
+    }
+    
+    .stit {
+        text-align: center;
+        color: gray;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    #find_link {
+        text-align: center;
+        margin: 15px;
+    }
+    
+    #find_link li {
+        display: inline;
+    }
+    
+    #loginsns {
+        text-align: center;
+    }
+    
+    #loginsns li {
+        display: inline;
+        margin-right: 30px;
+    }
+    #loginsns li:last-child {margin-right: 0;}
+    
+    #loginsns img {
+        width: 50px;
+    }
+    
+    
+    #footer {
+        clear: both;
+        background-color: #D9D9D9;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #foot {
+        height: 140px;
+    }
+    
+    #foot ul {
+        margin-bottom: 5px;
+    }
+    
+    #foot ul.flfl li {
+        padding-right: 10px;
+    }
+    
+    #foot ul.flfl li:last-child {
+        padding-right: 0px;
+    }
+    
+    #foot ul li {
+        display: inline;
+        font-size: 14px;
+    }
+    
+    .flfl li.bold {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    #foot h2 span {
+        font-size: 16px;
+    }
+    #foot h1 {font-size: 25px;}
+    
+    address {
+        text-align: center;
+        color: gray;
+        font-style: normal;
+
+    }
+}
+
