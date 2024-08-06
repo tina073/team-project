@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:521px) and (max-width:1199px) {
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /*로고*/
+    h1 img{margin: 20px;}
+    h1 {
+        position: relative;
+        z-index: 9999;
+    }
+
+    /*네비게이션*/
+    .gnb {
+        margin: 130px 0 0 20px;
+        display: none;
+    }
+
+    /*addClass*/
+    .gnb.open {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 8888;
+    }
+        .gnb li {       
+            margin-top: 20px;     
+            display: block;
+            margin-right: 40px;
+        }
+            .gnb li a {
+                font-weight: bold;
+                font-size: 35px;
+                color: #fff;
+            }
+            .gnb li:hover a {
+                color: #FF7E4B;
+            }
+    .sns { display: none; }
+    
+    /*햄버거 버튼*/
+    .hamBtn, .hamBtn span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+    }
+
+    .hamBtn {
+        position: relative; /*span의 기준이 되기 때문에 absolute로 설정하면 span의 위치가 틀어져 스크립트 효과가 나타나지 않는다*/
+        top: -60px;
+        left: 90%;
+        width: 50px;
+        height: 44px;
+        z-index: 9999;  /*h1보다 높거나 같지 않으면 스크립트 효과가 나타나지 않음*/
+    }
+
+        .hamBtn span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #ffffff;
+            border-radius: 4px;
+        }
+        .hamBtn span:nth-of-type(1) { top: 0; }
+        .hamBtn span:nth-of-type(2) { top: 20px; }
+        .hamBtn span:nth-of-type(3) { bottom: 0; }
+        /*active-1의 addClass*/
+        .hamBtn.active-1 span:nth-of-type(1) { transform: translateY(20px) rotate(-45deg); }
+        .hamBtn.active-1 span:nth-of-type(2) { opacity: 0; }
+        .hamBtn.active-1 span:nth-of-type(3) { transform: translateY(-20px) rotate(45deg); }
+    .hamBg {
+        background-color: #001F3F;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 7777;
+        width: 100%;
+        height: 100vh;
+    }
+    .indexLogin {
+        display: none;
+    }
+    .mainletter {margin-top: 100px;
+        font-size: 40px;}
+    .mainimage {position: absolute;
+    left:5%;
+top:100px;}
+.mainimage img{width: 110%;}
+    .fment {
+        font-size: calc(7vw);
+        letter-spacing: -3.5px;
+            }
+    .fment img {
+        width: 200px;
+        height: 60px;
+    }
+    #fifthMent {
+        font-size: calc(5.7vw);
+    }
+    #fifth li{
+        margin: 0;
+        padding-top: 60px;
+    }
+    #fifth li h1 {
+        font-size: calc(8vw);
+        position: relative;
+    }
+    #fifth .plus {
+        display: none;}
+    #fifth li p{
+        font-size: calc(3.5vw);
+    }
+  
+   
+    .towerment p {
+        font-size: calc(6vw);
+    }
+
+    .left h1 {
+        font-size: calc(2vw + 9px); /* 계산된 크기 */
+    }
+    
+    .left h1 span {
+        font-size: calc(2vw + 9px);
+    }
+    article h3 {font-size: 22px;}
+    article p {display: none;}
+   
+    
+    /*풋터*/
+    #footer {
+        background-color: #D9D9D9;
+        text-align: center;
+        width: 100%;
+    }
+
+    #foot {
+        height: 200px;
+    }
+
+    #foot ul {
+        margin-bottom: 5px;
+    }
+
+    #foot ul.flfl li {
+        padding-right: 10px;
+    }
+
+    #foot ul.flfl li:last-child {
+        padding-right: 0px;
+    }
+
+    #foot h1 {
+        font-size: 25px;
+    }
+
+    #foot ul li {
+        display: inline;
+    }
+
+    .flfl li.bold {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    #foot h2 span {
+        font-size: 16px;
+    }
+
+    address {
+        text-align: center;
+        color: gray;
+        font-style: normal;
+    }
+}

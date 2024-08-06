@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:520px) {
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /*로고*/
+    h1 img{margin: 20px;}
+    h1 {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .gnb {
+        margin: 130px 0 0 20px;
+        display: none;
+    }
+    .gnb.open {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 8888;
+    }
+        .gnb li {       
+            margin-top: 20px;     
+            display: block;
+            margin-right: 40px;
+        }
+            .gnb li a {
+                font-weight: bold;
+                font-size: 35px;
+                color: #fff;
+            }
+            .gnb li:hover a {
+                color: #FF7E4B;
+            }
+
+    .sns {
+        display: none;
+    }
+
+    /*햄버거 버튼*/
+    .hamBtn, .hamBtn span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+    }
+
+    .hamBtn {
+        position: relative; /*span의 기준이 되기 때문에 absolute로 설정하면 span의 위치가 틀어져 스크립트 효과가 나타나지 않는다*/
+        top: -60px;
+        left: 90%;
+        width: 50px;
+        height: 44px;
+        z-index: 9999;  /*h1보다 높거나 같지 않으면 스크립트 효과가 나타나지 않음*/
+    }
+
+        .hamBtn span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #ffffff;
+            border-radius: 4px;
+        }
+        .hamBtn span:nth-of-type(1) { top: 0; }
+        .hamBtn span:nth-of-type(2) { top: 20px; }
+        .hamBtn span:nth-of-type(3) { bottom: 0; }
+        /*active-1의 addClass*/
+        .hamBtn.active-1 span:nth-of-type(1) { transform: translateY(20px) rotate(-45deg); }
+        .hamBtn.active-1 span:nth-of-type(2) { opacity: 0; }
+        .hamBtn.active-1 span:nth-of-type(3) { transform: translateY(-20px) rotate(45deg); }
+    .hamBg {
+        background-color: #001F3F;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 7777;
+        width: 100%;
+        height: 100vh;
+    }
+    .mainletter {
+        font-size: 38px;
+    }
+
+    .mainimage {
+        position: absolute;
+        top: 150px;
+        left: -30px;
+    }
+
+    .indexLogin {
+        display: none;
+    }
+
+    .mainimage img {
+        width: 600px;
+    }
+
+    .towerment {
+        margin: 100px -30px;
+    }
+
+    .towerment p {
+        font-size: 45px;
+    }
+
+    #locamark img {
+        width: 60px;
+    }
+
+    .ment1 {
+        margin-left: -120px;
+    }
+
+    #ment {
+        position: relative;
+
+    }
+
+    #second {
+        height: 100vh;
+    }
+
+    .loca1 {
+        position: absolute;
+        top: 400px;
+        left: 20px;
+    }
+
+    .loca2 {
+        position: absolute;
+        top: 800px;
+        left: 400px;
+    }
+
+    .loca4 {
+        position: absolute;
+        top: 780px;
+        left: 160px;
+    }
+
+    #third {
+        display: block;
+        overflow: hidden;
+    }
+
+    .left {
+        width: 100%;
+        color: white;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    article {
+        background-image: none;
+        border-radius: 50px;
+        width: 50%;
+        height: 40%;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.5s;
+        
+    }
+
+    article img {
+        transform: rotateY(90deg);
+        transition: transform 1s, opacity 0.5s;
+        position: absolute;
+        width: 400px;
+        height: 100%;
+        margin-top: 0px;
+        margin-left: -100px;
+        z-index: 1;
+    }
+
+    article h2 {
+        position: absolute;
+        top: 30px;
+        padding-left: 15px;
+        border-left: 3px solid #FF7E4B;
+        font: bold 20px Raleway;
+        color: #001F3F;
+        z-index: 3;
+        transition: all 0.2s;
+    }
+    article div {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 0px;
+        background: #ffffff;
+        opacity: 0.5;
+        z-index: 2;
+        transition: all 0.7s;
+    }
+
+    article p {
+        font-weight: bold;
+        position: absolute;
+        bottom: -60px;
+        right: -30px;
+        width: 300px;
+        height: 150px;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        opacity: 0;
+        z-index: 5;
+    }
+
+    article:hover div {
+        top: 0px;
+        height: 70px;
+    }
+    article:nth-of-type(2) p {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    
+    article h3 {
+        position: absolute;
+        bottom: 100px;
+        left: -300px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        opacity: 1;
+        z-index: 4;
+    }
+
+    article:hover img {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    article:hover h3 {
+        display: none;
+    }
+    article:hover p{
+        opacity: 1;
+    }
+    .mainimg {
+        display: none;
+    }
+
+
+    .fment {
+        font-size: 30px;
+        margin: 0 auto;
+        margin-left: -30px;
+        letter-spacing: -3px;
+    }
+
+    .fment img {
+        width: 200px;
+        height: 70px;
+    }
+
+    .fment span {
+        position: relative;
+        top: -30px;
+        left: -10px;
+        font-size: 40px;
+    }
+    #addpage{
+        width: 100%;
+        height: 100vh;
+    }
+    #addpage img {display: none;}
+    #addpage {background: url(../images/iphone520.png) no-repeat center bottom;}
+
+    #addpage p{font-size: 22px;position: absolute;top:15%;}
+
+    #fourth .content {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #fourth {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/Rectangle.png) no-repeat 50% 60%;
+        background-size: 300px;
+        z-index: 557777775;
+    }
+    .bggh img{display: none;}
+    .appbtn {
+        margin: 100px;
+        margin-top: 100px;
+    }
+
+    .appbtn img {
+        width: 200px;
+        margin-top: 10px;
+        box-shadow: 2px 2px 3px rgb(85, 85, 85);
+        border-radius: 50px;
+    }
+
+    /* 피프스 섹션 */
+    #fifth {
+        height: 100vh;
+        border-top: 2px solid gray;
+    }
+
+    #fifthMent {
+        font-size: 30px;
+    }
+
+    #fifth h2 {
+        font-size: 28px;
+    }
+
+    #fifth .countMent {
+        display: none !important;
+    }
+
+    #fifth ul img {
+        display: none;
+    }
+
+    #fifth ul li {
+        margin: 0;
+        display: block;
+        height: 170px;
+        padding-top: 60px;
+    }
+
+    #fifth ul li h1 {
+        font-size: 80px;
+    }
+
+    #fifth ul li p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #fifth ul li:first {
+        padding-top: 50px;
+    }
+
+    #fifth .plus {
+        position: relative;
+        top: -150px;
+        left: 120px;
+        font-size: 60px;
+    }
+
+    #fifth .na {
+        position: relative;
+        left: 180px;
+    }
+
+    #fifth .content {
+        font-size: 18px;
+        /* 본문 폰트 크기 조정 */
+        line-height: 1.6;
+    }
+
+
+
+    /*풋터*/
+    #footer {
+        background-color: #D9D9D9;
+        text-align: center;
+        width: 100%;
+    }
+
+    #foot {
+        height: 200px;
+    }
+
+    #foot ul {
+        margin-bottom: 5px;
+    }
+
+    #foot ul.flfl li {
+        padding-right: 10px;
+    }
+
+    #foot ul.flfl li:last-child {
+        padding-right: 0px;
+    }
+
+    #foot h1 {
+        font-size: 20px;
+    }
+
+    #foot ul li {
+        display: inline;
+    }
+
+    .flfl li.bold {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    #foot h2 span {
+        font-size: 16px;
+    }
+
+    address {
+        text-align: center;
+        color: gray;
+        font-style: normal;
+    }
+}
