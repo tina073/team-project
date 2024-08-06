@@ -124,7 +124,7 @@ li {list-style-type:none;}
                             width: 100%;
                             text-align:center; 
                             color:#FF7E4B; 
-                            font-size: 60px; 
+                            font-size: 4vw; /* 뷰포트 너비의 5% */
                             position:absolute; 
                             top: 5%;
                             margin: 0 auto;    
@@ -134,10 +134,10 @@ li {list-style-type:none;}
                                 width: 100%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 35px; 
+                                font-size: 2vw; /* 뷰포트 너비의 3% */
                                 font-weight: 500px;
                                 position:absolute; 
-                                top: 30%;
+                                top: 25%;
                                 left:0;
                                 margin: 0 auto; 
                                 font-weight: 900;    
@@ -146,14 +146,14 @@ li {list-style-type:none;}
                                 width: 100%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 20px; 
+                                font-size: 1.5vw; /* 뷰포트 너비의 2% */
                                 position:absolute; 
-                                top: 40%;
+                                top: 35%;
                                 margin: 0 auto;   
                                 
                             }         
                                 #app .text{
-                                    font-size:25px;
+                                    font-size:1.5vw;
                                     margin-top: 20%;
                                 }
                                 #icon{ position: relative;}
@@ -161,14 +161,14 @@ li {list-style-type:none;}
                                         float:left;
                                         width:15%;
                                         height:auto;
-                                        margin-top: -20%;
+                                        margin-top: -30%;
                                         margin-left: 15%;
                                     }
                                     .google{
                                         float:left;
                                         width:15%;
                                         height:auto;
-                                        margin-top: -20%;
+                                        margin-top: -30%;
                                         margin-left: 38%;
                                     }
             .bar {
@@ -204,7 +204,7 @@ li {list-style-type:none;}
                 width: 100%;
                 text-align:center; 
                 color:#FF7E4B; 
-                font-size: 38px; 
+                font-size: 3vw; 
                 position:absolute; 
                 top: 30%;
                 margin: 0 auto;    
@@ -213,7 +213,7 @@ li {list-style-type:none;}
                 width: 100%;
                 text-align:center; 
                 color:#000; 
-                font-size: 30px; 
+                font-size: 2.5vw; 
                 position:absolute; 
                 top: 40%;
                 margin: 0 auto;    
@@ -245,7 +245,7 @@ li {list-style-type:none;}
                             width: 100%;
                             text-align:center; 
                             color:#FF7E4B; 
-                            font-size: 38px; 
+                            font-size: 3vw;
                             position:absolute; 
                             top: 30%;
                             margin: 0 auto;    
@@ -254,7 +254,7 @@ li {list-style-type:none;}
                             width: 100%;
                             text-align:center; 
                             color:#000; 
-                            font-size: 30px; 
+                            font-size: 2.5vw;
                             position:absolute; 
                             top: 40%;
                             margin: 0 auto;    
@@ -284,7 +284,7 @@ li {list-style-type:none;}
                         width: 100%;
                         text-align:center; 
                         color:#FF7E4B; 
-                        font-size: 38px; 
+                        font-size: 3vw;
                         position:absolute; 
                         top: 30%;
                         margin: 0 auto;    
@@ -293,7 +293,7 @@ li {list-style-type:none;}
                         width: 100%;
                         text-align:center; 
                         color:#000; 
-                        font-size: 30px; 
+                        font-size: 2.5vw;
                         position:absolute; 
                         top: 40%;
                         margin: 0 auto;    
@@ -323,7 +323,7 @@ li {list-style-type:none;}
                                 width: 100%;
                                 text-align:center; 
                                 color:#FF7E4B; 
-                                font-size: 38px; 
+                                font-size: 3vw;
                                 position:absolute; 
                                 top: 30%;
                                 margin: 0 auto;    
@@ -332,7 +332,7 @@ li {list-style-type:none;}
                                 width: 100%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 30px; 
+                                font-size: 2.5vw; 
                                 position:absolute; 
                                 top: 40%;
                                 margin: 0 auto;    

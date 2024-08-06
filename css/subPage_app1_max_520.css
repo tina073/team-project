@@ -49,7 +49,7 @@ body {
         }
             .gnb li a {
                 font-weight: bold;
-                font-size: 35px;
+                font-size: 25px;
                 color: #fff;
             }
             .gnb li:hover a {
@@ -67,6 +67,7 @@ body {
                         clear:both;
                         position: absolute; /*span의 기준이 되기 때문에 absolute로 설정하면 span의 위치가 틀어져 스크립트 효과가 나타나지 않는다*/
                         right: 5%;
+                        top:4%;
                         width: 50px;
                         height: 44px;
                         z-index: 9999;/*h1보다 높거나 같지 않으면 스크립트 효과가 나타나지 않음*/
@@ -140,9 +141,9 @@ body {
                             width: 100%;
                             text-align:center; 
                             color:#FF7E4B; 
-                            font-size: 45px; 
+                            font-size: 7vw; /* 뷰포트 너비의 7% */
                             position:absolute; 
-                            top: 10%;
+                            top: 0%;
                             margin: 0 auto;    
                             font-weight: 900;
                         } 
@@ -150,10 +151,10 @@ body {
                                 width: 100%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 20px; 
+                                font-size: 4vw; /* 뷰포트 너비의 4% */
                                 font-weight: 500px;
                                 position:absolute; 
-                                top: 30%;
+                                top: 20%;
                                 left:0;
                                 margin: 0 auto; 
                                 font-weight: 900;    
@@ -162,9 +163,9 @@ body {
                                 width: 90%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 15px; 
+                                font-size: 3vw; /* 뷰포트 너비의 3% */
                                 position:absolute; 
-                                top: 40%;
+                                top: 30%;
                                 left:5%;
                                 margin: 0 auto;   
                             }         
@@ -175,14 +176,14 @@ body {
                                         float:left;
                                         width:28%;
                                         height:auto;
-                                        margin-top: -275%;
-                                        margin-left: 22%;
+                                        margin-top: -210%;
+                                        margin-left: 20%;
                                     }
                                     .google{
                                         float:left;
                                         width:28%;
                                         height:auto;
-                                        margin-top: -275%;
+                                        margin-top: -210%;
                                         margin-left: 58%;
                                     }
 
@@ -211,21 +212,21 @@ body {
                     left:10%;
                 }   
                     .introTxt h2{
-                        width: 80%;
+                        width: 85%;
                         text-align:center; 
                         color:#FF7E4B; 
-                        font-size: 38px; 
+                        font-size: 8vw; 
                         position:absolute; 
-                        top: 30%;
+                        top: 50%;
                         margin: 0 auto;    
                     }         
                     .introTxt p{
                         width: 90%;
                         text-align:center; 
                         color:#000; 
-                        font-size: 25px; 
+                        font-size: 4.5vw; 
                         position:absolute; 
-                        top: 45%;
+                        top: 70%;
                         margin: 0 auto;    
                     }         
                 
@@ -256,7 +257,7 @@ body {
                             width: 90%;
                             text-align:center; 
                             color:#FF7E4B; 
-                            font-size: 38px; 
+                            font-size: 8vw;  
                             position:absolute; 
                             top: 30%;
                             left:10%;
@@ -264,9 +265,9 @@ body {
                         }      
                         .homeTxt span{
                             color:#FF7E4B; 
-                            font-size: 38px; 
+                            font-size: 8vw;  
                             position:absolute; 
-                            top: 80%;
+                            top: 83%;
                             left:10%;
                             margin: 0 auto;    
                         }      
@@ -274,9 +275,9 @@ body {
                             width: 65%;
                             text-align:center; 
                             color:#000; 
-                            font-size: 25px; 
+                            font-size: 4.5vw; 
                             position:absolute; 
-                            top: 45%;
+                            top: 50%;
                             left:18%;
                             margin: 0 auto;    
                         }
@@ -307,7 +308,7 @@ body {
                             width: 70%;
                             text-align:center; 
                             color:#FF7E4B; 
-                            font-size: 38px; 
+                            font-size: 8vw; 
                             position:absolute; 
                             top: 30%;
                             left:13%;
@@ -317,9 +318,9 @@ body {
                             width: 90%;
                             text-align:center; 
                             color:#000; 
-                            font-size: 25px; 
+                            font-size: 4.5vw; 
                             position:absolute; 
-                            top: 45%;
+                            top: 50%;
                             left:0%;
                             margin: 0 auto;    
                         }
@@ -349,7 +350,7 @@ body {
                                     width: 100%;
                                     text-align:center; 
                                     color:#FF7E4B; 
-                                    font-size: 38px; 
+                                    font-size: 8vw; 
                                     position:absolute; 
                                     top: 30%;
                                     margin: 0 auto;    
@@ -358,9 +359,9 @@ body {
                                     width: 75%;
                                     text-align:center; 
                                     color:#000; 
-                                    font-size: 25px; 
+                                    font-size: 4vw; 
                                     position:absolute; 
-                                    top: 40%;
+                                    top: 45%;
                                     left:10%;
                                     margin: 0 auto;    
                                 }          
