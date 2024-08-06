@@ -67,7 +67,7 @@ body {
                         clear:both;
                         position: absolute; /*span의 기준이 되기 때문에 absolute로 설정하면 span의 위치가 틀어져 스크립트 효과가 나타나지 않는다*/
                         right: 5%;
-                        top:4%;
+                        top:2%;
                         width: 50px;
                         height: 44px;
                         z-index: 9999;/*h1보다 높거나 같지 않으면 스크립트 효과가 나타나지 않음*/
@@ -143,7 +143,7 @@ body {
                             color:#FF7E4B; 
                             font-size: 7vw; /* 뷰포트 너비의 7% */
                             position:absolute; 
-                            top: 0%;
+                            top: 10%;
                             margin: 0 auto;    
                             font-weight: 900;
                         } 
@@ -151,7 +151,7 @@ body {
                                 width: 100%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 4vw; /* 뷰포트 너비의 4% */
+                                font-size: 5vw; /* 뷰포트 너비의 4% */
                                 font-weight: 500px;
                                 position:absolute; 
                                 top: 20%;
@@ -160,14 +160,15 @@ body {
                                 font-weight: 900;    
                             }         
                                 #app p{
-                                width: 90%;
+                                width: 100%;
                                 text-align:center; 
                                 color:#000; 
                                 font-size: 3vw; /* 뷰포트 너비의 3% */
                                 position:absolute; 
-                                top: 30%;
-                                left:5%;
-                                margin: 0 auto;   
+                                top: 25%;
+                                left:0%;
+                                margin: 0 auto;
+                                line-height: 50px;   
                             }         
                                 #app .text{ display: none;}
 
@@ -176,20 +177,20 @@ body {
                                         float:left;
                                         width:28%;
                                         height:auto;
-                                        margin-top: -210%;
+                                        margin-top: -460%;
                                         margin-left: 20%;
                                     }
                                     .google{
                                         float:left;
                                         width:28%;
                                         height:auto;
-                                        margin-top: -210%;
+                                        margin-top: -460%;
                                         margin-left: 58%;
                                     }
 
         /*엡 목업 이미지*/                            
-        #content{height:100vh; }
-            .intro{clear:both; background-color: #E8E8E8;}
+        #content{ }
+            .intro{height:100vh; clear:both; background-color: #E8E8E8; border: 1px solid red;}
                 .introImgwrap{display: none;}
                 /*.introImgwrap{
                     float: left;
@@ -217,7 +218,7 @@ body {
                         color:#FF7E4B; 
                         font-size: 8vw; 
                         position:absolute; 
-                        top: 50%;
+                        top: 45%;
                         margin: 0 auto;    
                     }         
                     .introTxt p{
@@ -226,12 +227,12 @@ body {
                         color:#000; 
                         font-size: 4.5vw; 
                         position:absolute; 
-                        top: 70%;
+                        top: 60%;
                         margin: 0 auto;    
                     }         
                 
                     
-            .home{}
+            .home{height:100vh;  border: 1px solid red;}
                 .homeImgwrap{display: none;}
                 /*.homeImgwrap{
                         float: right;
@@ -259,7 +260,7 @@ body {
                             color:#FF7E4B; 
                             font-size: 8vw;  
                             position:absolute; 
-                            top: 30%;
+                            top: 40%;
                             left:10%;
                             margin: 0 auto;    
                         }      
@@ -277,12 +278,12 @@ body {
                             color:#000; 
                             font-size: 4.5vw; 
                             position:absolute; 
-                            top: 50%;
+                            top: 55%;
                             left:18%;
                             margin: 0 auto;    
                         }
                 
-                .park{clear:both;}
+                .park{clear:both; height:100vh;  border: 1px solid red;}
                     .parkImgwrap{display: none;}        
                     /*.parkImgwrap{
                         float: left;
@@ -310,7 +311,7 @@ body {
                             color:#FF7E4B; 
                             font-size: 8vw; 
                             position:absolute; 
-                            top: 30%;
+                            top: 40%;
                             left:13%;
                             margin: 0 auto;    
                         }         
@@ -320,11 +321,11 @@ body {
                             color:#000; 
                             font-size: 4.5vw; 
                             position:absolute; 
-                            top: 50%;
+                            top: 55%;
                             left:0%;
                             margin: 0 auto;    
                         }
-                .myCar{background-color: #E8E8E8;}
+                .myCar{background-color: #E8E8E8; height:100vh;  border: 1px solid red;}
                     .myCarImgwrap{display: none;} 
                     /*.myCarImgwrap{
                                 float: right;
@@ -352,7 +353,7 @@ body {
                                     color:#FF7E4B; 
                                     font-size: 8vw; 
                                     position:absolute; 
-                                    top: 30%;
+                                    top: 40%;
                                     margin: 0 auto;    
                                 }         
                                 .myCarTxt p{
@@ -361,7 +362,7 @@ body {
                                     color:#000; 
                                     font-size: 4vw; 
                                     position:absolute; 
-                                    top: 45%;
+                                    top: 50%;
                                     left:10%;
                                     margin: 0 auto;    
                                 }          

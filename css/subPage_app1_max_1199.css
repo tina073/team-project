@@ -161,14 +161,14 @@ li {list-style-type:none;}
                                         float:left;
                                         width:15%;
                                         height:auto;
-                                        margin-top: -30%;
+                                        margin-top: -50%;
                                         margin-left: 15%;
                                     }
                                     .google{
                                         float:left;
                                         width:15%;
                                         height:auto;
-                                        margin-top: -30%;
+                                        margin-top: -50%;
                                         margin-left: 38%;
                                     }
             .bar {
@@ -189,7 +189,7 @@ li {list-style-type:none;}
             .introImg{
             width: 140%;
             position: absolute;
-            top: 10%;
+            top: 20%;
             left: 50%;
             transform: translateX(-50%);
                     }
@@ -230,7 +230,7 @@ li {list-style-type:none;}
                         .homeImg{
                         width: 150%;
                         position: absolute;
-                        top: 5%;
+                        top: 15%;
                         left: 50%;
                         transform: translateX(-50%);
                                 }
@@ -269,7 +269,7 @@ li {list-style-type:none;}
                     .parkImg{
                     width: 130%;
                     position: absolute;
-                    top: 10%;
+                    top: 20%;
                     left: 50%;
                     transform: translateX(-50%);
                             }
@@ -308,7 +308,7 @@ li {list-style-type:none;}
                             .myCarImg{
                                 width: 140%;
                                 position: absolute;
-                                top: 10%;
+                                top: 20%;
                                 left: 50%;
                                 transform: translateX(-50%);
                                     }
