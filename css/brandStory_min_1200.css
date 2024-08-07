@@ -11,44 +11,52 @@ a { text-decoration: none; color: #000; }
 @media screen and (min-width:1200px) {
 body { font-size:16px; }
 
-    header {
-        position: relative;
-        z-index: 9999;
-    }
-    /*헤더*/    
-    h1 { margin: 10px; }
+header {
+    position: relative;
+    z-index: 9999;
+}
+/*헤더*/    
+h1 img { margin: 10px; }
 
-    /*네비게이션*/
-    .gnb {
-        position: absolute;
-        top: 30px;
-        left:300px;
+/*네비게이션*/
+.gnb {
+position: absolute;
+top: 30px;
+left:300px;
+}
+.gnb li {
+display: inline-block;
+margin-right: 40px;
+}
+.gnb li a {
+font-weight: bold;
+font-size: 20px;
+color:#fff;
+}
+.gnb li:hover a {
+color: #aaa;
+}
+.sns {
+    position: absolute;
+    top: 35px;
+    right: 120px;
+}
+    .sns li{
+        display: inline;
+        margin-right: 20px;
     }
-    .gnb li {
-        display: inline-block;
-        margin-right: 40px;
-    }
-    .gnb li a {
-        font-weight: bold;
-        font-size: 20px;
-        color: #fff;
-    }
-    .gnb li:hover a {
-        color: #aaa;
-    }
-    .hamBtn {
-        display: none;
-    }
-    .sns {
-        position: absolute;
-        top: 35px;
-        right: 100px;
-    }
-        .sns li{
-            display: inline;
-            margin-right: 20px;
-        }
 
+.indexLogin {
+    position: absolute;
+    top:32px;
+    right: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hamBtn {
+    display: none;
+}
         /*배너*/
         .subBanner {
             width: 100%;

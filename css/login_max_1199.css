@@ -91,14 +91,12 @@ body {
         height: 300px;
     
     }
-    
     /*로고*/    
     h1 { 
         position: relative; 
         z-index: 9999;
     }
-    h1 img {margin: 10px;}
-
+        h1 img { margin: 10px; }
     /*네비게이션*/
     .gnb {
         margin: 130px 0 0 20px;
@@ -126,7 +124,7 @@ body {
                 color: #FF7E4B;
             }
     .sns { display: none; }
-    
+    .indexLogin { display: none; }
     /*햄버거 버튼*/
     .hamBtn, .hamBtn span {
         display: inline-block;

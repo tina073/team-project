@@ -87,85 +87,80 @@ body {
     width: 100%;
     background-color: #001F3F;
     height: 300px;
-    z-index: 4;
+    z-index: 8888;
 
 }
+/*헤더*/    
+h1 img { margin: 10px; }
 
-/*헤더*/
-h1 {
-    position: relative;
-    z-index: 999999; 
-}
-
-h1 img {
-    margin: 10px;
-    z-index: 999999; 
-}
 /*네비게이션*/
 .gnb {
-    position: absolute;
-    top: 30px;
-    left: 300px;
-    z-index: 999999999999;
+position: absolute;
+top: 30px;
+left:300px;
 }
-
 .gnb li {
-    display: inline-block;
-    margin-right: 40px;
+display: inline-block;
+margin-right: 40px;
 }
-
 .gnb li a {
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
+font-weight: bold;
+font-size: 20px;
+color:#fff;
 }
-
 .gnb li:hover a {
-    color: #aaa;
+color: #aaa;
 }
-
-.hamBtn {
-    display: none;
-}
-
 .sns {
     position: absolute;
     top: 35px;
-    right: 100px;
-    z-index:09999999999999999;
+    right: 120px;
 }
+    .sns li{
+        display: inline;
+        margin-right: 20px;
+    }
 
-/*배너*/
-.subBanner {
-    width: 100%;
-    height: 300px;
+.indexLogin {
     position: absolute;
-    top: 0;
+    top:32px;
+    right: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
-    .subBanner img {
-        width: 120px;
-        position: absolute;
-        left: 53%;
-        top: 185px;
-        transform: translateX(-50%);
-    }
-    .subBanner h2 {
-        color: #fff;
-        font-size: 5em;
-        position: absolute;
-        top:58px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-        .subBanner span {
-            color: #FF7E4B;
-            font-size: 2.5em;
+.hamBtn {
+    display: none;
+}
+        /*배너*/
+        .subBanner {
+            width: 100%;
+            height: 300px;
+            background-color: #001F3F;
+            position: absolute;
+            top: 0;
         }
-.sns li {
-    display: inline;
-    margin-right: 20px;
-    z-index: 44;
-}
+            .subBanner img {
+                width: 120px;
+                position: absolute;
+                left: 52%;
+                top: 195px;
+                transform: translateX(-50%);
+                z-index: 8888;
+            }
+            .subBanner h2 {
+                color: #fff;
+                font-size: 4em;
+                position: absolute;
+                top: 105px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 8888;
+            }
+                .subBanner span {
+                    color: #FF7E4B;
+                    font-size: 2.5em;
+                }
 
 #contentWrap {
     width: 100%;
@@ -274,48 +269,28 @@ input:last-child {
     width: 50px;
 }
 
-
-#footer {
-    clear: both;
-    background-color: #D9D9D9;
-    text-align: center;
+/*풋터*/
+#footer{
+    background-color: #D9D9D9; 
+    text-align: center; 
     width: 100%;
-    height: 140px;
-
 }
-
-#foot {
-    
-}
-
-#foot ul {
-    margin-bottom: 5px;
-}
-
-#foot ul.flfl li {
-    padding-right: 10px;
-}
-
-#foot ul.flfl li:last-child {
-    padding-right: 0px;
-}
-
-#foot ul li {
-    display: inline;
-}
-
-.flfl li.bold {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-#foot h2 span {
-    font-size: 16px;
-}
-
-address {
-    text-align: center;
-    color: gray;
-    margin-top: 10px;
-    font-style: normal;
-}
+    #foot {
+        height: 140px; 
+        margin-top: 20px;
+    }
+        #foot ul { margin-bottom: 5px; }
+        #foot ul.flfl li{ padding-right: 10px;}
+        #foot ul.flfl li:last-child { padding-right: 0px;}
+            #foot ul li{ display: inline; }
+                .flfl li.bold {
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+        #foot h2 span{ font-size: 16px;}
+        address{
+            text-align: center;
+            color: gray;
+            margin-top: 10px;
+            font-style: normal;
+        }

@@ -17,11 +17,10 @@ body { font-size:16px; }
     }
     /*로고*/    
     h1 { 
-        margin: 10px; 
         position: relative; 
         z-index: 9999;
     }
-
+        h1 img { margin: 10px; }
     /*네비게이션*/
     .gnb {
         margin: 130px 0 0 20px;
@@ -42,13 +41,14 @@ body { font-size:16px; }
         }
             .gnb li a {
                 font-weight: bold;
-                font-size: 35px;
+                font-size: 27px;
                 color: #fff;
             }
             .gnb li:hover a {
                 color: #FF7E4B;
             }
     .sns { display: none; }
+    .indexLogin { display: none; }
     /*햄버거 버튼*/
     .hamBtn, .hamBtn span {
         display: inline-block;

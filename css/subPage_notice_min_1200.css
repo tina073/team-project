@@ -9,38 +9,54 @@ li { list-style: none; }
 a { text-decoration: none; color: #000; }
 /*--------reset--------*/
 @media screen and (min-width:1200px) {
-body { font-size:16px; }
+    body { font-size:16px; }
 
+    header {
+        position: relative;
+        z-index: 9999;
+    }
     /*헤더*/    
-    h1 { margin: 10px; }
-
+    h1 img { margin: 10px; }
+    
     /*네비게이션*/
     .gnb {
-        position: absolute;
-        top: 30px;
-        left:300px;
+    position: absolute;
+    top: 30px;
+    left:300px;
     }
-        .gnb li {
-            display: inline-block;
-            margin-right: 40px;
-        }
-            .gnb li a {
-                font-weight: bold;
-                font-size: 20px;
-            }
-                .gnb li:hover a {
-                    color: #aaa;
-                }
+    .gnb li {
+    display: inline-block;
+    margin-right: 40px;
+    }
+    .gnb li a {
+    font-weight: bold;
+    font-size: 20px;
+    color:#000;
+    }
+    .gnb li:hover a {
+    color: #aaa;
+    }
     .hamBtn {
         display: none;
     }
     .sns {
         position: absolute;
         top: 35px;
-        right: 100px;
+        right: 120px;
     }
-        .sns li{display: inline;margin-right: 20px;}
+        .sns li{
+            display: inline;
+            margin-right: 20px;
+        }
 
+    .indexLogin {
+        position: absolute;
+        top:32px;
+        right: 50px;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+    }
         /*경로*/
         .locationBar { 
             position: relative; /*:after의 position의 기준*/
@@ -100,7 +116,7 @@ body { font-size:16px; }
         /*게시판*/
         .boardWrap { 
             width: 1100px; 
-            min-height: 300px; /*footer의 움직임 방지*/
+            min-height: 500px; /*footer의 움직임 방지*/
             margin: 50px auto;
             border-top: 2px solid #000;
         }
@@ -127,8 +143,6 @@ body { font-size:16px; }
     /*풋터*/
     #footer{
         background-color: #D9D9D9; 
-        position: fixed; 
-        bottom:0;
         text-align: center; 
         width: 100%;
     }

@@ -26,11 +26,10 @@ body {
 
     /*로고*/    
     h1 { 
-        margin: 10px; 
         position: relative; 
         z-index: 9999;
     }
-
+        h1 img { margin: 10px; }
     /*네비게이션*/
     .gnb {
         margin: 130px 0 0 20px;
@@ -49,13 +48,14 @@ body {
         }
             .gnb li a {
                 font-weight: bold;
-                font-size: 25px;
+                font-size: 27px;
                 color: #fff;
             }
             .gnb li:hover a {
                 color: #FF7E4B;
             }
     .sns { display: none; }
+    .indexLogin { display: none; }
         /*햄버거 버튼*/
             .hamBtn, .hamBtn span {
                 display: inline-block;
@@ -190,7 +190,7 @@ body {
 
         /*엡 목업 이미지*/                            
         #content{ }
-            .intro{height:100vh; clear:both; background-color: #E8E8E8; border: 1px solid red;}
+            .intro{height:100vh; clear:both; background-color: #E8E8E8; }
                 .introImgwrap{display: none;}
                 /*.introImgwrap{
                     float: left;
@@ -232,7 +232,7 @@ body {
                     }         
                 
                     
-            .home{height:100vh;  border: 1px solid red;}
+            .home{height:100vh; }
                 .homeImgwrap{display: none;}
                 /*.homeImgwrap{
                         float: right;
@@ -283,7 +283,7 @@ body {
                             margin: 0 auto;    
                         }
                 
-                .park{clear:both; height:100vh;  border: 1px solid red;}
+                .park{clear:both; height:100vh;}
                     .parkImgwrap{display: none;}        
                     /*.parkImgwrap{
                         float: left;
@@ -325,7 +325,7 @@ body {
                             left:0%;
                             margin: 0 auto;    
                         }
-                .myCar{background-color: #E8E8E8; height:100vh;  border: 1px solid red;}
+                .myCar{background-color: #E8E8E8; height:100vh;}
                     .myCarImgwrap{display: none;} 
                     /*.myCarImgwrap{
                                 float: right;
@@ -375,16 +375,27 @@ body {
                                 }
                     .bar img{width:30%;}            
 
-    #footer{ clear: both; height: 200px; background-color: #D9D9D9; position: relative; text-align: center;}
-        #foot {height: 150px;  padding: 20px 0 0 20px; }
-            #foot ul { margin-bottom: 10px; }
-            #foot ul li{display: inline;}
-                .flfl li {margin-right: 20px;}
-                .flfl li.bold {font-weight: bold; text-decoration: underline;}
-                #foot span{ font-size: 16px; display: inline;}
-                address{
-                    text-align: center;
-                    color: gray;
-                    position: relative;
-                    top:40px;
+                    #footer{
+                        background-color: #D9D9D9; 
+                        text-align: center; 
+                        width: 100%;
                     }
+                        #foot {
+                            height: 140px; 
+                            margin-top: 20px;
+                        }
+                            #foot ul { margin-bottom: 5px; }
+                            #foot ul.flfl li{ padding-right: 10px;}
+                            #foot ul.flfl li:last-child { padding-right: 0px;}
+                                #foot ul li{ display: inline; }
+                                    .flfl li.bold {
+                                        font-weight: bold;
+                                        text-decoration: underline;
+                                    }
+                            #foot h2 span{ font-size: 16px;}
+                            address{
+                                text-align: center;
+                                color: gray;
+                                margin-top: 10px;
+                                font-style: normal;
+                            }
