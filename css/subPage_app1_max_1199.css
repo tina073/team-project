@@ -155,15 +155,21 @@ li {list-style-type:none;}
                                     font-size:1.5vw;
                                     margin-top: 20%;
                                 }
-                                #icon {
-                                    top: -40%;
-                                    left: 15%;
-                                }
-                    
-                                #button {
-                                    width: 45%;
-                                }
-                            
+                                #icon{ position: relative;}
+                                    .apple{
+                                        float:left;
+                                        width:15%;
+                                        height:auto;
+                                        margin-top: -50%;
+                                        margin-left: 15%;
+                                    }
+                                    .google{
+                                        float:left;
+                                        width:15%;
+                                        height:auto;
+                                        margin-top: -50%;
+                                        margin-left: 38%;
+                                    }
             .bar {
                 position:fixed; 
                 bottom:100px; 
@@ -171,7 +177,7 @@ li {list-style-type:none;}
                 z-index: 9999;
                 }
 
-        #content{ }
+        #content{height:100vh; }
         .intro{clear:both; background-color: #E8E8E8;}
         .introImgwrap{
             float: left;
@@ -335,7 +341,6 @@ li {list-style-type:none;}
         background-color: #D9D9D9; 
         text-align: center; 
         width: 100%;
-        clear: both;
     }
         #foot {
             height: 140px; 

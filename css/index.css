@@ -39,6 +39,7 @@ video {
     bottom: 20px;
     /* 화면 하단에서 20px 거리 */
     left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
 }
 
@@ -52,10 +53,13 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    z-index: 8888;
+    z-index: 9998;
 }
 
 .quickTopBtn {
+    position: absolute; /* quickMenu 안에서 절대 위치로 설정 */
+    bottom: 80px; /* quickMenu의 하단에 위치 */
+    right: 0; /* quickMenu의 오른쪽에 위치 */
     width: 60px;
     height: 60px;
     background-color: #fff;
@@ -78,6 +82,9 @@ body {
 }
 
 .chatBotBtn {
+    position: absolute; /* quickMenu 안에서 절대 위치로 설정 */
+    bottom: 0px; /* quickTopBtn 위에 80px 간격으로 위치 */
+    right: 0; /* quickMenu의 오른쪽에 위치 */
     width: 60px;
     height: 60px;
     background: #001F3F;
@@ -740,7 +747,6 @@ article p {
     }
         #foot {
             height: 140px; 
-            margin-top: 20px;
         }
             #foot ul { margin-bottom: 5px; }
             #foot ul.flfl li{ padding-right: 10px;}

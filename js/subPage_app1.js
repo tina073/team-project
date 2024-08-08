@@ -3,17 +3,17 @@ $(document).ready(function() {
     let currentSectionIndex = 0;
     let isScrolling = false;
 
-    function scrollToSection(index) {
-        if (index >= 0 && index < sections.length) {
-            isScrolling = true;
-            $('html, body').animate({
-                scrollTop: $(sections[index]).offset().top
-            }, 1000, function() {
-                isScrolling = false;
-            });
-            currentSectionIndex = index;
-        }
-    }
+    // function scrollToSection(index) {
+    //     if (index >= 0 && index < sections.length) {
+    //         isScrolling = true;
+    //         $('html, body').animate({
+    //             scrollTop: $(sections[index]).offset().top
+    //         }, 1000, function() {
+    //             isScrolling = false;
+    //         });
+    //         currentSectionIndex = index;
+    //     }
+    // }
 
     function handleScroll(event) {
         if ($(window).width() >= 1200) {
@@ -54,4 +54,29 @@ $(document).ready(function() {
             isScrolling = false;
         }
     });
+
+    var $quickTopBtn = $('.top');
+     var $footer = $('#footer');
+
+    // 'Top' 버튼 클릭 시 페이지 상단으로 스크롤
+    $quickTopBtn.on('click', function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+});
+
+     //footer가 보였을때 top버튼 나타나게 하기 
+     
+ 
+     $(window).on('scroll', function() {
+         var footerOffset = $footer.offset().top;
+         var windowBottom = $(window).scrollTop() + $(window).height();
+ 
+         // footer가 화면에 보일 때 quickTopBtn에 'show' 클래스 추가
+         //footer가 보이면 이 높이 값보다 윈도우 bottom이 커지니까 footer가 보인다구 할수잇음
+         //이때 class show추가 ! 
+         if (windowBottom >= footerOffset) {
+             $quickTopBtn.addClass('show');
+         } else {
+             $quickTopBtn.removeClass('show');
+         }
+     });
 });

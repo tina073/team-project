@@ -10,6 +10,27 @@ a { text-decoration: none; color: #000; }
 /*--------reset--------*/
 @media screen and (min-width:521px) and (max-width:1199px) {
 body { font-size:16px; }
+.quickMenu {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999999;
+}
+
+.chatBotBtn {
+    width: 60px;
+    height: 60px;
+    background: #001F3F;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 중앙 정렬 */
+    cursor: pointer;
+    margin-top: 10px;
+    /* quickTopBtn과 간격을 줌 */
+}
 
     /*로고*/    
     h1 { 

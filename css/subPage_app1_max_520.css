@@ -154,7 +154,7 @@ body {
                                 font-size: 5vw; /* 뷰포트 너비의 4% */
                                 font-weight: 500px;
                                 position:absolute; 
-                                top: 25%;
+                                top: 20%;
                                 left:0;
                                 margin: 0 auto; 
                                 font-weight: 900;    
@@ -163,7 +163,7 @@ body {
                                 width: 100%;
                                 text-align:center; 
                                 color:#000; 
-                                font-size: 2.5vw; /* 뷰포트 너비의 3% */
+                                font-size: 3vw; /* 뷰포트 너비의 3% */
                                 position:absolute; 
                                 top: 25%;
                                 left:0%;
@@ -172,15 +172,21 @@ body {
                             }         
                                 #app .text{ display: none;}
 
-                                #icon {
-                                    top: -145%;
-                                    left: 20%;
-                                }
-                    
-                                #button {
-                                    width: 50%;
-                                }
-                            
+                                #icon{ position: relative;}
+                                    .apple{
+                                        float:left;
+                                        width:28%;
+                                        height:auto;
+                                        margin-top: -460%;
+                                        margin-left: 20%;
+                                    }
+                                    .google{
+                                        float:left;
+                                        width:28%;
+                                        height:auto;
+                                        margin-top: -460%;
+                                        margin-left: 58%;
+                                    }
 
         /*엡 목업 이미지*/                            
         #content{ }
