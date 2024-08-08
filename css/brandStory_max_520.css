@@ -10,7 +10,53 @@ a { text-decoration: none; color: #000; }
 /*--------reset--------*/
 @media screen and (max-width:520px) {
 body { font-size:16px; }
+.quickMenu {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9998;
+}
 
+.quickTopBtn {
+    position: absolute; 
+    bottom: 80px; 
+    right: 0; 
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid #001F3F;
+    border-radius: 50%;
+    color: #001F3F;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.quickTopBtn.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.chatBotBtn {
+    position: absolute; 
+    bottom: 0px; 
+    right: 0; 
+    width: 60px;
+    height: 60px;
+    background: #001F3F;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px; 
+}
     header {
         position: relative;
         z-index: 9999;
