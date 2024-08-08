@@ -177,7 +177,7 @@ li {list-style-type:none;}
                 z-index: 9999;
                 }
 
-        #content{height:100vh; }
+        #content{ }
         .intro{clear:both; background-color: #E8E8E8;}
         .introImgwrap{
             float: left;
@@ -341,6 +341,7 @@ li {list-style-type:none;}
         background-color: #D9D9D9; 
         text-align: center; 
         width: 100%;
+        clear: both;
     }
         #foot {
             height: 140px; 
