@@ -172,21 +172,15 @@ body {
                             }         
                                 #app .text{ display: none;}
 
-                                #icon{ position: relative;}
-                                    .apple{
-                                        float:left;
-                                        width:28%;
-                                        height:auto;
-                                        margin-top: -300%;
-                                        margin-left: 20%;
-                                    }
-                                    .google{
-                                        float:left;
-                                        width:28%;
-                                        height:auto;
-                                        margin-top: -300%;
-                                        margin-left: 58%;
-                                    }
+                                #icon {
+                                    top: -145%;
+                                    left: 20%;
+                                }
+                    
+                                #button {
+                                    width: 50%;
+                                }
+                            
 
         /*엡 목업 이미지*/                            
         #content{ }

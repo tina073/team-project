@@ -155,21 +155,15 @@ li {list-style-type:none;}
                                     font-size:1.5vw;
                                     margin-top: 20%;
                                 }
-                                #icon{ position: relative;}
-                                    .apple{
-                                        float:left;
-                                        width:15%;
-                                        height:auto;
-                                        margin-top: -50%;
-                                        margin-left: 15%;
-                                    }
-                                    .google{
-                                        float:left;
-                                        width:15%;
-                                        height:auto;
-                                        margin-top: -50%;
-                                        margin-left: 38%;
-                                    }
+                                #icon {
+                                    top: -40%;
+                                    left: 15%;
+                                }
+                    
+                                #button {
+                                    width: 45%;
+                                }
+                            
             .bar {
                 position:fixed; 
                 bottom:100px; 
